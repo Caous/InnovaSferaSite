@@ -6,15 +6,19 @@ export const HeroImage = styled.section`
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 1080px;
+  min-height: 100vh;
   position: relative;
+
+  .header {
+    width: 100%;
+  }
 
   header {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 32px 0;
+    margin-top: 32px;
     margin-bottom: 13%;
 
     nav {
@@ -54,8 +58,6 @@ export const HeroImage = styled.section`
     align-items: center;
     gap: 12px;
     position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0%);
     bottom: 7%;
 
     p {

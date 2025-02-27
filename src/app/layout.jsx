@@ -1,6 +1,5 @@
 import { Plus_Jakarta_Sans } from "next/font/google";
-
-import { GlobalStyles, StyledComponentsRegistry } from "@/lib";
+import { StyledComponentsRegistry } from "@/lib";
 
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -18,7 +17,6 @@ export default function RootLayout({ children }) {
     <html lang="pt-br" className={plusJakarta.className}>
       <link rel="icon" href="logo.png" />
       <body>
-        <GlobalStyles />
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
       </body>
     </html>

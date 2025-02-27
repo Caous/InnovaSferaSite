@@ -1,16 +1,41 @@
 "use client";
 
 import Hero from "../components/hero";
+import About from "../components/about";
+import Loading from "../components/loading";
+
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+
+import { GlobalStyles } from "@/lib";
 
 export default function Home() {
-  return (
-    <div>
-      <Hero />
+  const [loading, setLoading] = useState(true);
 
-      <section>
-        <h3>Conheça a InnovaSfera</h3>
-        <h2>Ajudamos empresas a construírem produtos digitais inovadores.</h2>
-      </section>
-    </div>
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 11500);
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <>
+      <GlobalStyles />
+      {loading ? (
+        <motion.div exit={{ opacity: 0 }} transition={{ duration: 1 }}>
+          <Loading />
+        </motion.div>
+      ) : (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+          <Hero />
+          <About />
+        </motion.div>
+      )}
+    </>
   );
 }

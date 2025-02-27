@@ -23,6 +23,15 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  ::-webkit-scrollbar {
+    width: 20px;
+    background: #0F0F0F; 
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #ABABAB; 
+  }
+
   ul,
   ol,
   li {
@@ -64,6 +73,7 @@ export const GlobalStyles = createGlobalStyle`
 
   body {
     overflow-x: hidden;
+     overflow-y: scroll;
   }
 
   html {
