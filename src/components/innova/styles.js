@@ -55,7 +55,7 @@ export const AboutInnova = styled.section`
       width: 100%;
 
       h3 {
-        font-size: 3.2rem;
+        font-size: 2.4rem;
         font-weight: 400;
         padding-left: 16px;
         border-left: 3px solid #a2ef1b;

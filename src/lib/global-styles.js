@@ -65,6 +65,7 @@ export const GlobalStyles = createGlobalStyle`
   button,
   input {
     border: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
     
     &:focus {
       border: 0;
