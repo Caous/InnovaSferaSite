@@ -3,6 +3,7 @@
 import Hero from "../components/hero";
 import About from "../components/about";
 import Loading from "../components/loading";
+import AboutInnva from "../components/innova";
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
@@ -15,7 +16,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 11500);
+    }, 7000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -34,6 +35,7 @@ export default function Home() {
         >
           <Hero />
           <About />
+          <AboutInnva />
         </motion.div>
       )}
     </>

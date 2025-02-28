@@ -15,9 +15,9 @@ export default function Loading() {
         "Construindo produtos <b>inovadores.</b>",
         "innovasfera<b>.com</b>", ""
       ],
-      startDelay: 400,
-      typeSpeed: 80,
-      backSpeed: 40,
+      startDelay: 300,
+      typeSpeed: 50,
+      backSpeed: 30,
     });
 
     return () => {
