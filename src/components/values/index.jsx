@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Slide from "../slide";
 
 import ContainerI from "../container";
 import { ValuesContainer } from "./styles";
@@ -10,53 +11,72 @@ export default function Values() {
   return (
     <ValuesContainer>
       <ContainerI>
-        <h3>Valores da InnovaSfera</h3>
+        <Slide delay={0.2}>
+          <h3>Valores da InnovaSfera</h3>
+        </Slide>
 
-        <h2>
-          Guiamos empresas com valores que{" "}
-          <b>transformam ideias em inovação.</b>
-        </h2>
+        <Slide delay={0.3}>
+          <h2>
+            Guiamos empresas com valores que{" "}
+            <b>transformam ideias em inovação.</b>
+          </h2>
+        </Slide>
 
         <div className="container-values">
           <div className="container-values-text">
             <Accordion>
-              <AccordionItem
-                header={
-                  <div className="teste">
-                    <p className="title">Relacionamento ético</p>
-                    <img src="arrow-down.svg" alt="image" />
-                  </div>
-                }
-                initialEntered
-              >
-                No relacionamento ético, pautado no respeito e transparência
-                para construir os melhores resultados com responsabilidade;
-              </AccordionItem>
+              <Slide delay={0.5}>
+                <AccordionItem
+                  header={
+                    <div className="value">
+                      <p className="title">Relacionamento ético</p>
 
-              <AccordionItem
-                header={
-                  <div className="teste">
-                    <p className="title">Esforço com qualidade</p>
-                    <img src="arrow-down.svg" alt="image" />
-                  </div>
-                }
-              >
-                Quisque eget luctus mi, vehicula mollis lorem. Proin fringilla
-                vel erat quis sodales. Nam ex enim, eleifend venenatis lectus
-                vitae, accumsan auctor mi.
-              </AccordionItem>
+                      <div>
+                        <img src="icon-add.svg" alt="image" />
+                      </div>
+                    </div>
+                  }
+                  initialEntered
+                >
+                  No relacionamento ético, pautado no respeito e transparência
+                  para construir os melhores resultados com responsabilidade;
+                </AccordionItem>
+              </Slide>
 
-              <AccordionItem
-                header={
-                  <div className="teste">
-                    <p className="title">Desenvolvimento humano</p>
-                    <img src="arrow-down.svg" alt="image" />
-                  </div>
-                }
-              >
-                Suspendisse massa risus, pretium id interdum in, dictum sit amet
-                ante. Fusce vulputate purus sed tempus feugiat.
-              </AccordionItem>
+              <Slide delay={0.6}>
+                <AccordionItem
+                  header={
+                    <div className="value">
+                      <p className="title">Esforço com qualidade</p>
+
+                      <div>
+                        <img src="icon-add.svg" alt="image" />
+                      </div>
+                    </div>
+                  }
+                >
+                  Quisque eget luctus mi, vehicula mollis lorem. Proin fringilla
+                  vel erat quis sodales. Nam ex enim, eleifend venenatis lectus
+                  vitae, accumsan auctor mi.
+                </AccordionItem>
+              </Slide>
+
+              <Slide delay={0.7}>
+                <AccordionItem
+                  header={
+                    <div className="value">
+                      <p className="title">Desenvolvimento humano</p>
+
+                      <div>
+                        <img src="icon-add.svg" alt="image" />
+                      </div>
+                    </div>
+                  }
+                >
+                  Suspendisse massa risus, pretium id interdum in, dictum sit
+                  amet ante. Fusce vulputate purus sed tempus feugiat.
+                </AccordionItem>
+              </Slide>
             </Accordion>
           </div>
 

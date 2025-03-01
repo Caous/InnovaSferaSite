@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 
+import Slide from "../slide";
+
 import Image from "next/image";
 
 import ContainerI from "../container";
@@ -69,13 +71,18 @@ export default function Cases() {
   return (
     <CasesContainer>
       <ContainerI>
-        <h3>Cases da InnovaSfera</h3>
-        <h2>
-          Conheça nossos projetos, tecnologias e inovações com{" "}
-          <b>transformação digital.</b>
-        </h2>
+        <Slide delay={0.2}>
+          <h3>Cases da InnovaSfera</h3>
+        </Slide>
 
-        <div className="container-cases-filter">
+        <Slide delay={0.4}>
+          <h2>
+            Conheça nossos projetos, tecnologias e inovações com{" "}
+            <b>transformação digital.</b>
+          </h2>
+        </Slide>
+
+        <Slide delay={0.4} className="container-cases-filter">
           {["Todos", "Frontend", "Backend", "Mobile"].map((category) => (
             <button
               key={category}
@@ -85,11 +92,11 @@ export default function Cases() {
               {category}
             </button>
           ))}
-        </div>
+        </Slide>
 
         <div className="container-cases-cards">
           {filteredProjects.map((project) => (
-            <div key={project.id} className="card-case">
+            <Slide delay={0.5} key={project.id} className="card-case">
               <img src={project.image} alt={project.title} />
               <div>
                 <h4>{project.title}</h4>
@@ -98,7 +105,7 @@ export default function Cases() {
                   <button>Acessar projeto</button>
                 </a>
               </div>
-            </div>
+            </Slide>
           ))}
         </div>
       </ContainerI>

@@ -21,17 +21,17 @@ export default function Footer() {
             <span>
               <h3>Empresa</h3>
 
-              <p>Serviços</p>
-              <p>Projetos</p>
-              <p>InnovaStudio</p>
-              <p>Contato</p>
+              <a href="#">Serviços</a>
+              <a href="#">Projetos</a>
+              <a href="#">InnovaStudio</a>
+              <a href="#">Contato</a>
             </span>
 
             <span>
               <h3>Social</h3>
 
-              <p>Instagram</p>
-              <p>LinkedIn</p>
+              <a href="#">Instagram</a>
+              <a href="#">LinkedIn</a>
             </span>
           </div>
         </div>

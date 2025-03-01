@@ -50,10 +50,10 @@ export const ValuesContainer = styled.footer`
       display: flex;
       flex-direction: column;
       gap: 32px;
+
       > div {
         width: 100%;
         background-color: #0f0f16;
-
         border-radius: 12px;
         border: 2px solid #1d1d26;
 
@@ -61,11 +61,22 @@ export const ValuesContainer = styled.footer`
           border: 2px solid #a2ef1b;
         }
 
-        .teste {
+        &:hover .value div {
+          background-color: #2d2d2d;
+        }
+
+        .value {
           width: 100%;
           display: flex;
           align-items: center;
           justify-content: space-between;
+
+          div {
+            border: 1px solid #1d1d26;
+            background-color: #1f1f1f;
+            border-radius: 8px;
+            padding: 12px;
+          }
         }
 
         .szh-accordion__item-panel {

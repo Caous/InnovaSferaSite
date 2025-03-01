@@ -16,10 +16,11 @@ export const FooterContainer = styled.footer`
     align-items: center;
     justify-content: space-between;
 
-    p {
+    p, a {
       font-size: 1.8rem;
       color: #c4c4c4;
       margin: 20px 0;
+      display: block;
     }
 
     .navigation-footer {
