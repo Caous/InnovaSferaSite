@@ -65,7 +65,7 @@ export const GlobalStyles = createGlobalStyle`
   button,
   input {
     border: 0;
-    font-family: "Plus Jakarta Sans", sans-serif;
+    font-family: "Plus Jakarta Sans";
     
     &:focus {
       border: 0;
@@ -74,11 +74,13 @@ export const GlobalStyles = createGlobalStyle`
 
   body {
     overflow-x: hidden;
-     overflow-y: scroll;
+    overflow-y: scroll;
+    
   }
 
   html {
     scroll-behavior: smooth;
     font-size: 62.5%;
+    
   }
 `;

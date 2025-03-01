@@ -15,7 +15,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br" className={plusJakarta.className}>
-      <link rel="icon" href="logo.png" />
+      <head>
+        <link rel="icon" href="logo.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body>
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
       </body>
