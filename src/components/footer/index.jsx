@@ -11,7 +11,7 @@ export default function Footer() {
       <ContainerI>
         <div className="container-footer">
           <div>
-            <Image src="logo-white.svg" width={32} height={32} />
+            <Image src="logo-white.svg" width={32} height={32} alt="Imagem" />
             <p>innovasfera@gmail.com</p>
             <p>CNPJ sob o nº 123456789</p>
             <p>InnovaSfera. Todos os direitos reservados</p>

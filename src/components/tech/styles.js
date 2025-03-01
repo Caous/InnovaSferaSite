@@ -41,6 +41,10 @@ export const TechContainer = styled.section`
       }
     }
 
+    img {
+      height: auto;
+    }
+
     h3 {
       max-width: 850px;
       font-size: 3.2rem;

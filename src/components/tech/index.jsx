@@ -15,7 +15,7 @@ export default function Tech() {
             <b>alcançar o resultado!</b>
           </h2>
 
-          <Image src="tech.svg" width={1088} height={358} />
+          <Image src="tech.svg" width={1088} height={358} alt="Imagem" />
 
           <h3>
             Reunimos especialistas com habilidades diversas, trabalhando em

@@ -8,6 +8,7 @@ export const Studio = styled.section`
   position: relative;
 
   > img {
+    height: auto; 
     position: absolute;
     top: 50%;
     left: 50%;
@@ -79,13 +80,12 @@ export const Studio = styled.section`
 
     article {
       background-color: #0f0f16;
-
       width: 100%;
 
       img {
         border-radius: 16px;
-        width: 100%;
-        object-fit: cover;
+        width: auto;
+       
       }
     }
 

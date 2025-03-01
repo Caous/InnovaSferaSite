@@ -24,7 +24,7 @@ export default function Values() {
                 header={
                   <div className="teste">
                     <p className="title">Relacionamento ético</p>
-                    <img src="arrow-down.svg" alt="" />
+                    <img src="arrow-down.svg" alt="image" />
                   </div>
                 }
                 initialEntered
@@ -37,7 +37,7 @@ export default function Values() {
                 header={
                   <div className="teste">
                     <p className="title">Esforço com qualidade</p>
-                    <img src="arrow-down.svg" alt="" />
+                    <img src="arrow-down.svg" alt="image" />
                   </div>
                 }
               >
@@ -50,7 +50,7 @@ export default function Values() {
                 header={
                   <div className="teste">
                     <p className="title">Desenvolvimento humano</p>
-                    <img src="arrow-down.svg" alt="" />
+                    <img src="arrow-down.svg" alt="image" />
                   </div>
                 }
               >
@@ -60,9 +60,7 @@ export default function Values() {
             </Accordion>
           </div>
 
-          <div className="container-values-image">
-            
-          </div>
+          <div className="container-values-image"></div>
         </div>
       </ContainerI>
     </ValuesContainer>

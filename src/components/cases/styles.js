@@ -29,14 +29,14 @@ export const CasesContainer = styled.section`
   .container-cases-filter {
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 24px;
 
     button {
       background-color: #fff;
       border: 1px solid #2a2a2a;
       padding: 8px 24px;
       border-radius: 32px;
-      font-size: 2rem;
+      font-size: 1.8rem;
       cursor: pointer;
       text-transform: uppercase;
     }

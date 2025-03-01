@@ -9,6 +9,7 @@ import InnovaStudio from "../components/innovastudio";
 import Tech from "../components/tech";
 import Footer from "../components/footer";
 import Cases from "../components/cases";
+import ServicesTwo from "../components/servicestwo";
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
@@ -43,6 +44,7 @@ export default function Home() {
           <AboutInnova />
           <Values />
           <Cases />
+          <ServicesTwo />
           <InnovaStudio />
           <Tech />
           <Footer />

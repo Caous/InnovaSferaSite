@@ -10,7 +10,7 @@ import Slide from "../slide";
 export default function Innova() {
   return (
     <AboutInnova>
-      <Image src="./logo-gray.svg" width={600} height={600} />
+      <Image src="./logo-gray.svg" width={600} height={600} alt="Imagem"/>
       <ContainerI>
         <div className="about-innova-text">
           <Slide delay={0.2}>

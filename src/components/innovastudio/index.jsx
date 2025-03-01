@@ -9,7 +9,7 @@ import Image from "next/image";
 export default function InnovaStudio() {
   return (
     <Studio>
-      <Image src="/bg-studio.svg" width={1920} height={764} />
+      <Image src="/bg-studio.svg" width={1920} height={764} alt="Imagem" />
       <ContainerI>
         <div className="container-studio-text">
           <Slide delay={0.2}>
@@ -30,14 +30,24 @@ export default function InnovaStudio() {
           <Slide delay={0.4}>
             <div className="container-studio-icon">
               <div>
-                <Image src="/icon-check.svg" width={16} height={16} />
+                <Image
+                  src="/icon-check.svg"
+                  width={16}
+                  height={16}
+                  alt="image"
+                />
               </div>
               <h4>Fotos profissionais e produção de vídeo</h4>
             </div>
 
             <div className="container-studio-icon">
               <div>
-                <Image src="/icon-check.svg" width={16} height={16} />
+                <Image
+                  src="/icon-check.svg"
+                  width={16}
+                  height={16}
+                  alt="image"
+                />
               </div>
               <h4>Identidade visual e artes gráficas</h4>
             </div>
@@ -48,13 +58,13 @@ export default function InnovaStudio() {
           <div className="card-one">
             <Slide delay={0.4}>
               <article>
-                <Image src="/s1.png" width={280} height={450} />
+                <Image src="/s1.png" width={280} height={450} alt="Imagem" />
               </article>
             </Slide>
 
             <Slide delay={0.6}>
               <article>
-                <Image src="/s2.png" width={280} height={210} />
+                <Image src="/s2.png" width={280} height={210} alt="Imagem" />
               </article>
             </Slide>
           </div>
@@ -62,13 +72,13 @@ export default function InnovaStudio() {
           <div className="card-two">
             <Slide delay={0.7}>
               <article>
-                <Image src="/s3.png" width={280} height={450} />
+                <Image src="/s3.png" width={280} height={450} alt="Imagem" />
               </article>
             </Slide>
 
             <Slide delay={0.9}>
               <article>
-                <Image src="/s4.png" width={280} height={210} />
+                <Image src="/s4.png" width={280} height={210} alt="Imagem" />
               </article>
             </Slide>
           </div>
