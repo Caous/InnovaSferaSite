@@ -9,6 +9,7 @@ import InnovaStudio from "../components/innovastudio";
 import Tech from "../components/tech";
 import Footer from "../components/footer";
 import Cases from "../components/cases";
+import Jobs from "../components/jobs";
 import ServicesTwo from "../components/servicestwo";
 
 import { useState, useEffect } from "react";
@@ -43,6 +44,7 @@ export default function Home() {
           <About />
           <AboutInnova />
           <Values />
+          <Jobs />
           <Cases />
           <ServicesTwo />
           <InnovaStudio />
