@@ -46,7 +46,7 @@ export default function About() {
               </p>
             </Slide>
 
-            <Slide delay={0.8}>
+            <Slide delay={0.8} className="opition">
               <h4>Design</h4>
               <h4>Tecnologia</h4>
               <h4>Inovação</h4>

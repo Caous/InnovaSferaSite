@@ -11,6 +11,10 @@ export const TechContainer = styled.section`
   padding: 140px 0px;
   background-color: #020013;
 
+  @media (max-width: 992px) {
+    padding: 80px 0px;
+  }
+
   .container-tech {
     display: flex;
     justify-content: space-between;
@@ -39,6 +43,10 @@ export const TechContainer = styled.section`
       b {
         font-weight: 200;
       }
+
+      @media (max-width: 992px) {
+        font-size: 3.2rem;
+      }
     }
 
     img {
@@ -51,6 +59,11 @@ export const TechContainer = styled.section`
       font-weight: 500;
       text-align: center;
       line-height: 140%;
+
+      @media (max-width: 992px) {
+        max-width: 100%;
+        font-size: 2.4rem;
+      }
     }
   }
 `;

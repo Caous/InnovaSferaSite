@@ -11,8 +11,16 @@ export const JobsContainer = styled.section`
   padding: 150px 0;
   background-color: #020013;
 
+  @media (max-width: 992px) {
+    padding: 80px 0;
+  }
+
   .jobs-option {
     width: 60%;
+
+    @media (max-width: 992px) {
+      width: 100%;
+    }
 
     > div h3 {
       color: #fff;
@@ -32,6 +40,11 @@ export const JobsContainer = styled.section`
       b {
         font-weight: 300;
       }
+
+      @media (max-width: 992px) {
+        max-width: 100%;
+        font-size: 3.2rem;
+      }
     }
 
     > div p {
@@ -45,6 +58,10 @@ export const JobsContainer = styled.section`
 
   .card-container {
     width: 50%;
+
+    @media (max-width: 992px) {
+      width: 100%;
+    }
 
     .mission {
       color: #c4c4c4;
@@ -60,6 +77,11 @@ export const JobsContainer = styled.section`
     align-items: center;
     justify-content: space-between;
     gap: 88px;
+
+    @media (max-width: 992px) {
+      flex-wrap: wrap;
+      gap: 0px;
+    }
   }
 
   .button-group {
@@ -68,6 +90,10 @@ export const JobsContainer = styled.section`
     text-align: left;
     align-items: flex-start;
     gap: 24px;
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
   }
 
   .button {

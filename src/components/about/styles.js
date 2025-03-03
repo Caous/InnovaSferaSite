@@ -9,6 +9,10 @@ export const AboutImage = styled.section`
   height: auto;
   padding: 140px 0px;
 
+  @media (max-width: 992px) {
+    padding: 80px 0px;
+  }
+
   .container-about {
     display: flex;
     justify-content: space-between;
@@ -16,10 +20,19 @@ export const AboutImage = styled.section`
     width: 100%;
     position: relative;
 
+    @media (max-width: 992px) {
+      flex-wrap: wrap;
+    }
+
     .image {
       position: absolute;
       left: -84px;
       top: 10%;
+
+      @media (max-width: 1212px) {
+        display: none;
+        background-color: red;
+      }
     }
   }
 
@@ -29,6 +42,16 @@ export const AboutImage = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+
+    .opition {
+      @media (max-width: 992px) {
+        flex-wrap: wrap;
+      }
+    }
 
     div {
       display: flex;
@@ -62,6 +85,10 @@ export const AboutImage = styled.section`
       b {
         font-weight: 300;
       }
+
+      @media (max-width: 992px) {
+        font-size: 3.2rem;
+      }
     }
 
     p {
@@ -76,6 +103,11 @@ export const AboutImage = styled.section`
   .container-about-image {
     width: 35%;
     height: auto;
+
+    @media (max-width: 992px) {
+      margin-top: 32px;
+      width: 100%;
+    }
 
     video {
       height: 100%;

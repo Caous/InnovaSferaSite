@@ -65,7 +65,7 @@ export default function Hero() {
 
         <Slide delay={1.0}>
           <article>
-            <h3>UI/UX Design</h3>
+            <h3>UX Design</h3>
             <h3>Aplicativo</h3>
             <h3>Frontend</h3>
             <h3>Backend</h3>

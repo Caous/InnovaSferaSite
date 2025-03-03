@@ -16,11 +16,20 @@ export const ServicesTwoContainer = styled.section`
   margin-top: -300px;
   min-height: 800px;
 
+  @media (max-width: 992px) {
+    min-height: 500px;
+    margin-top: -200px;
+  }
+
   .container-services-two {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    @media (max-width: 992px) {
+      margin-top: 64px;
+    }
 
     h3 {
       color: #fff;
@@ -41,6 +50,11 @@ export const ServicesTwoContainer = styled.section`
 
       b {
         font-weight: 300;
+      }
+
+      @media (max-width: 992px) {
+        max-width: 100%;
+        font-size: 3.2rem;
       }
     }
   }

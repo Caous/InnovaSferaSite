@@ -6,6 +6,10 @@ export const CasesContainer = styled.section`
   padding: 150px 0px;
   background-color: #f3f2f3;
 
+  @media (max-width: 992px) {
+    padding: 80px 0px;
+  }
+
   h3 {
     color: #2a2a2a;
     font-size: 2rem;
@@ -24,12 +28,23 @@ export const CasesContainer = styled.section`
     b {
       font-weight: 300;
     }
+
+    @media (max-width: 992px) {
+      font-size: 3.2rem;
+      max-width: 100%;
+      margin-bottom: 40px;
+    }
   }
 
   .container-cases-filter {
     display: flex;
     align-items: center;
     gap: 24px;
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      gap: 16px;
+    }
 
     button {
       background-color: #fff;
@@ -52,6 +67,10 @@ export const CasesContainer = styled.section`
     flex-wrap: wrap;
     margin-top: 56px;
     gap: 32px;
+
+    @media (max-width: 992px) {
+      flex-wrap: wrap;
+    }
   }
 
   .card-case {
@@ -65,6 +84,10 @@ export const CasesContainer = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media (max-width: 992px) {
+      width: 47%;
+    }
 
     img {
       width: 100%;

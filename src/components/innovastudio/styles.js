@@ -7,8 +7,12 @@ export const Studio = styled.section`
   padding: 220px 0px 140px 0px;
   position: relative;
 
+  @media (max-width: 992px) {
+    padding: 80px 0px;
+  }
+
   > img {
-    height: auto; 
+    height: auto;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -20,11 +24,19 @@ export const Studio = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 992px) {
+      flex-wrap: wrap;
+    }
   }
 
   .container-studio-text {
     width: 45%;
     z-index: 2;
+
+    @media (max-width: 992px) {
+      width: 100%;
+    }
 
     .container-studio-icon {
       display: flex;
@@ -60,6 +72,10 @@ export const Studio = styled.section`
       b {
         font-weight: 300;
       }
+
+      @media (max-width: 992px) {
+        font-size: 3.2rem;
+      }
     }
 
     p {
@@ -78,6 +94,10 @@ export const Studio = styled.section`
     justify-content: space-between;
     gap: 32px;
 
+    @media (max-width: 992px) {
+      display: none;
+    }
+
     article {
       background-color: #0f0f16;
       width: 100%;
@@ -85,7 +105,6 @@ export const Studio = styled.section`
       img {
         border-radius: 16px;
         width: auto;
-       
       }
     }
 

@@ -6,8 +6,9 @@ export const HeroImage = styled.section`
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  min-height: 100vh;
+  height: auto;
   position: relative;
+  padding-bottom: 200px;
 
   .header {
     width: 100%;
@@ -21,6 +22,10 @@ export const HeroImage = styled.section`
     margin-top: 32px;
     margin-bottom: 13%;
 
+    @media (max-width: 992px) {
+      justify-content: center;
+    }
+
     nav {
       display: flex;
       align-items: center;
@@ -29,6 +34,10 @@ export const HeroImage = styled.section`
       border: 1px solid #242d6b;
       border-radius: 100px;
       padding: 8px 24px 8px 8px;
+
+      @media (max-width: 992px) {
+        display: none;
+      }
 
       a {
         color: #a7adbe;
@@ -74,6 +83,10 @@ export const HeroImage = styled.section`
     font-size: 1.6rem;
     font-weight: 500;
 
+    @media (max-width: 992px) {
+      display: none;
+    }
+
     &:hover {
       background-color: #92d222;
     }
@@ -96,6 +109,14 @@ export const HeroImage = styled.section`
     padding: 16px;
     border: 1px solid #232329;
 
+    @media (max-height: 850px) {
+      display: none;
+    }
+
+    @media (max-width: 1200px) {
+      display: none;
+    }
+
     h3 {
       font-size: 1.6rem;
       font-weight: 400;
@@ -116,6 +137,11 @@ export const HeroImage = styled.section`
     padding: 8px 16px 8px 8px;
     margin-bottom: 24px;
 
+    @media (max-width: 768px) {
+      padding: 16px;
+      margin-top: 40px;
+    }
+
     .icon {
       padding: 12px;
       font-size: 2rem;
@@ -124,6 +150,10 @@ export const HeroImage = styled.section`
       display: flex;
       align-items: center;
       justify-content: center;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
   }
 
@@ -140,6 +170,10 @@ export const HeroImage = styled.section`
     text-align: center;
     font-weight: 500;
     margin: 0 auto 16px auto;
+
+    @media (max-width: 768px) {
+      font-size: 3.2rem;
+    }
   }
 
   p {
@@ -148,5 +182,9 @@ export const HeroImage = styled.section`
     color: #dddddd;
     text-align: center;
     line-height: 150%;
+
+    @media (max-width: 768px) {
+      font-size: 1.8rem;
+    }
   }
 `;

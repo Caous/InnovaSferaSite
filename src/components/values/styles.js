@@ -6,6 +6,10 @@ export const ValuesContainer = styled.footer`
   padding: 150px 0px;
   background-color: #020013;
 
+  @media (max-width: 992px) {
+    padding: 80px 0;
+  }
+
   .container-values {
     display: flex;
     align-items: stretch;
@@ -31,10 +35,19 @@ export const ValuesContainer = styled.footer`
     b {
       font-weight: 300;
     }
+
+    @media (max-width: 992px) {
+      font-size: 3.2rem;
+      max-width: 100%;
+    }
   }
 
   .container-values-text {
     width: 50%;
+
+    @media (max-width: 992px) {
+      width: 100%;
+    }
 
     .szh-accordion__item--expanded {
       button {
@@ -110,6 +123,10 @@ export const ValuesContainer = styled.footer`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (max-width: 992px) {
+      display: none;
+    }
 
     img {
       border-radius: 12px;

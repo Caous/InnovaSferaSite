@@ -8,10 +8,18 @@ export const AboutInnova = styled.section`
   position: relative;
   overflow: hidden;
 
+  @media (max-width: 992px) {
+    padding: 80px 0;
+  }
+
   > div {
     display: flex;
     justify-content: space-between;
     gap: 64px;
+
+    @media (max-width: 992px) {
+      flex-wrap: wrap;
+    }
   }
 
   img {
@@ -22,6 +30,10 @@ export const AboutInnova = styled.section`
 
   .about-innova-text {
     width: 35%;
+
+    @media (max-width: 992px) {
+      width: 100%;
+    }
 
     h2 {
       color: #020013;
@@ -36,9 +48,14 @@ export const AboutInnova = styled.section`
     p {
       color: #686868;
       font-size: 2rem;
+      font-weight: 500;
       max-width: 350px;
       line-height: 160%;
       margin-top: 32px;
+
+      @media (max-width: 992px) {
+        max-width: 100%;
+      }
     }
   }
 
@@ -47,6 +64,14 @@ export const AboutInnova = styled.section`
     display: flex;
     justify-content: space-between;
     gap: 32px;
+
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
 
     article {
       background-color: #0f0f16;
@@ -88,6 +113,10 @@ export const AboutInnova = styled.section`
       display: flex;
       flex-direction: column;
       gap: 24px;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
     }
 
     .card-two {
@@ -96,6 +125,14 @@ export const AboutInnova = styled.section`
       flex-direction: column;
       gap: 24px;
       margin-top: -80px;
+
+      @media (max-width: 992px) {
+        margin-top: 0px;
+      }
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
     }
   }
 `;
