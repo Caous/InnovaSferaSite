@@ -20,7 +20,7 @@ export const HeroImage = styled.section`
     align-items: center;
     justify-content: space-between;
     margin-top: 32px;
-    margin-bottom: 13%;
+    margin-bottom: 8%;
 
     @media (max-width: 992px) {
       justify-content: center;

@@ -27,7 +27,7 @@ export default function Hero() {
                 <li className="active">Início</li>
               </a>
 
-              <a href="#">
+              <a href="/servicos">
                 <li>Serviços</li>
               </a>
 
