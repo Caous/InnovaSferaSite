@@ -79,7 +79,7 @@ export default function Contato() {
 
                 <span>
                   <img src="icon-phone.svg" alt="" />
-                  <p>(00) 0000-0000</p>
+                  <p>14 9000-0000</p>
                 </span>
 
                 <span>

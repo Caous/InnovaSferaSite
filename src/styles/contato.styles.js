@@ -127,6 +127,7 @@ export const HeroContato = styled.section`
 
       @media (max-width: 1216px) {
         width: 100%;
+        padding: 32px 16px;
       }
     }
 
@@ -446,7 +447,8 @@ export const ValuesContainer = styled.footer`
           color: #fff;
 
           @media (max-width: 992px) {
-            padding: 0 32px 32px 32px;
+            font-size: 1.6rem;
+            padding: 0 16px 16px 16px;
           }
         }
 
@@ -463,7 +465,7 @@ export const ValuesContainer = styled.footer`
 
           @media (max-width: 992px) {
             font-size: 2rem;
-            padding: 32px;
+            padding: 16px;
           }
         }
       }
