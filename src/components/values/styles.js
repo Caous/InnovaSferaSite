@@ -109,6 +109,11 @@ export const ValuesContainer = styled.footer`
           padding: 48px 40px;
           font-family: "Plus Jakarta Sans", sans-serif;
           border-radius: 12px;
+
+          @media (max-width: 992px) {
+            font-size: 2rem;
+            padding: 32px;
+          }
         }
       }
     }

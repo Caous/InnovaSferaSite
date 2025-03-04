@@ -69,6 +69,10 @@ export const JobsContainer = styled.section`
       margin: 48px 0;
       line-height: 160%;
       font-weight: 400;
+
+      @media (max-width: 992px) {
+        display: none;
+      }
     }
   }
 
@@ -145,6 +149,10 @@ export const JobsContainer = styled.section`
     width: 40px;
     height: 40px;
     margin-right: 8px;
+
+    @media (max-width: 992px) {
+      display: none;
+    }
   }
 
   .title {
