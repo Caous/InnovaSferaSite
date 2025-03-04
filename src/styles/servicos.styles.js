@@ -10,6 +10,10 @@ export const ServicosContainer = styled.section`
   position: relative;
   padding-bottom: 200px;
 
+  @media (max-width: 992px) {
+    padding-bottom: 80px;
+  }
+
   .header {
     width: 100%;
   }
@@ -114,6 +118,7 @@ export const ServicosContainer = styled.section`
 
       @media (max-width: 992px) {
         flex-wrap: wrap;
+        flex-direction: column-reverse;
       }
 
       .cards {
@@ -176,6 +181,10 @@ export const ServicosContainer = styled.section`
       width: 40%;
       flex-grow: 1;
 
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+
       h3 {
         color: #fff;
         font-size: 2rem;
@@ -209,6 +218,7 @@ export const ServicesExplore = styled.section`
 
     @media (max-width: 992px) {
       flex-wrap: wrap;
+      padding: 80px 24px;
     }
   }
 
@@ -298,4 +308,149 @@ export const ServicesTwo = styled.section`
   height: auto;
   padding: 150px 0px;
   background-color: #020013;
+
+  h3 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 600;
+    max-width: 750px;
+
+    b {
+      font-weight: 300;
+    }
+
+    @media (max-width: 992px) {
+      font-size: 3.2rem;
+      max-width: 100%;
+    }
+  }
+
+  .card-small {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+
+    @media (max-width: 992px) {
+      flex-wrap: wrap;
+    }
+
+    article {
+      width: 100%;
+      height: auto;
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 32px;
+
+      display: flex;
+      flex-direction: column;
+
+      @media (max-width: 992px) {
+        padding: 24px;
+      }
+
+      span {
+        width: 100%;
+
+        h4 {
+          font-size: 3.2rem;
+          font-weight: 500;
+          color: #020013;
+        }
+
+        p {
+          margin-top: 24px;
+          font-size: 2rem;
+          color: #020013;
+          line-height: 160%;
+        }
+      }
+
+      div {
+        height: 250px;
+        width: 100%;
+        margin-top: 32px;
+
+        @media (max-width: 992px) {
+          width: 100%;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 0px 12px 12px 0px;
+        }
+      }
+    }
+  }
+
+  .card-big {
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 12px;
+    margin: 72px 0px 32px 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 992px) {
+      flex-wrap: wrap;
+      height: auto;
+    }
+
+    span {
+      padding: 80px 32px;
+      width: 50%;
+
+      @media (max-width: 992px) {
+        width: 100%;
+        padding: 24px;
+      }
+
+      h4 {
+        font-size: 3.2rem;
+        font-weight: 500;
+        color: #020013;
+      }
+
+      p {
+        margin-top: 24px;
+        font-size: 2rem;
+        color: #020013;
+        line-height: 160%;
+      }
+    }
+
+    div {
+      height: 100%;
+      width: 50%;
+
+      @media (max-width: 992px) {
+        width: 100%;
+        height: 300px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0px 12px 12px 0px;
+
+        @media (max-width: 992px) {
+          border-radius: 0px 0px 12px 12px;
+        }
+      }
+    }
+  }
 `;

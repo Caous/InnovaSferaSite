@@ -76,49 +76,54 @@ export default function Contato() {
 
             <div className="small-cards-services">
               <div className="cards">
-                <div>
+                <Slide delay={0.2}>
                   <h3>200+</h3>
                   <h4>Sites feitos</h4>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipiscing elit
                     aliquam mauris sed ma
                   </p>
-                </div>
+                </Slide>
 
-                <div>
+                <Slide delay={0.3}>
                   <h3>200+</h3>
                   <h4>Sites feitos</h4>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipiscing elit
                     aliquam mauris sed ma
                   </p>
-                </div>
+                </Slide>
 
-                <div>
+                <Slide delay={0.4}>
                   <h3>200+</h3>
                   <h4>Sites feitos</h4>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipiscing elit
                     aliquam mauris sed ma
                   </p>
-                </div>
+                </Slide>
 
-                <div>
+                <Slide delay={0.5}>
                   <h3>200+</h3>
                   <h4>Sites feitos</h4>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipiscing elit
                     aliquam mauris sed ma
                   </p>
-                </div>
+                </Slide>
               </div>
 
               <div className="small-title-services">
-                <h3>Inovando o mundo digital</h3>
-                <h2>
-                  <b>Explore nossas soluções</b>, tendências e avanços com
-                  inovação digital.
-                </h2>
+                <Slide delay={0.5}>
+                  <h3>Inovando o mundo digital</h3>
+                </Slide>
+
+                <Slide delay={0.6}>
+                  <h2>
+                    <b>Explore nossas soluções</b>, tendências e avanços com
+                    inovação digital.
+                  </h2>
+                </Slide>
               </div>
             </div>
           </article>
@@ -218,20 +223,63 @@ export default function Contato() {
       <ServicesTwo>
         <ContainerI>
           <section className="container-services-two">
-            <h3>Inovando o mundo digital</h3>
-            <h2>
-              <b>Explore nossas soluções</b>, tendências e avanços com inovação
-              digital.
-            </h2>
+            <Slide delay={0.2}>
+              <h3>Inovando o mundo digital</h3>
+            </Slide>
 
-            <article>
-              <h4>Web design</h4>
-              <p>
-                Lorem ipsum dalaracc lacus vel facilisis dolor sit amet consecte
-                tur adipiscing elit semper dalaracc lacus vel facilisis volutpat
-                est velitolm.
-              </p>
+            <Slide delay={0.3}>
+              <h2>
+                <b>Explore nossas soluções</b>, tendências e avanços com
+                inovação digital.
+              </h2>
+            </Slide>
+
+            <article className="card-big">
+              <span>
+                <h4>Web design</h4>
+                <p>
+                  Lorem ipsum dalaracc lacus vel facilisis dolor sit amet
+                  consecte tur adipiscing elit semper dalaracc lacus vel
+                  facilisis volutpat est velitolm.
+                </p>
+              </span>
+
+              <div>
+                <img src="./image.svg" alt="" />
+              </div>
             </article>
+
+            <div className="card-small">
+              <article>
+                <span>
+                  <h4>Web design</h4>
+                  <p>
+                    Lorem ipsum dalaracc lacus vel facilisis dolor sit amet
+                    consecte tur adipiscing elit semper dalaracc lacus vel
+                    facilisis volutpat est velitolm.
+                  </p>
+                </span>
+
+                <div>
+                  <img src="./image.svg" alt="" />
+                </div>
+              </article>
+
+              <article>
+                <span>
+                  <h4>Web design</h4>
+                  <p>
+                    Lorem ipsum dalaracc lacus vel facilisis dolor sit amet
+                    consecte tur adipiscing elit semper dalaracc lacus vel
+                    facilisis volutpat est velitolm.
+                  </p>
+                </span>
+
+                <div>
+                  <img src="./image.svg" alt="" />
+                </div>
+              </article>
+            </div>
           </section>
         </ContainerI>
       </ServicesTwo>
