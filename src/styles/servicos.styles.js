@@ -309,6 +309,10 @@ export const ServicesTwo = styled.section`
   padding: 150px 0px;
   background-color: #020013;
 
+  @media (max-width: 992px) {
+    padding: 80px 0px;
+  }
+
   h3 {
     color: #fff;
     font-size: 2rem;
@@ -449,6 +453,126 @@ export const ServicesTwo = styled.section`
 
         @media (max-width: 992px) {
           border-radius: 0px 0px 12px 12px;
+        }
+      }
+    }
+  }
+`;
+
+export const ServicesFour = styled.section`
+  width: 100%;
+  height: auto;
+  padding: 150px 0px;
+  background-color: #fff;
+
+  @media (max-width: 992px) {
+    padding: 80px 0;
+  }
+
+  h3 {
+    color: #020013;
+    font-size: 2rem;
+    margin-bottom: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  h2 {
+    color: #020013;
+    font-size: 4rem;
+    font-weight: 600;
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+
+    b {
+      font-weight: 300;
+    }
+
+    @media (max-width: 992px) {
+      font-size: 3.2rem;
+      max-width: 100%;
+    }
+  }
+
+  .container-cases-filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin: 72px 0;
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    button {
+      background-color: #fff;
+      border: 1px solid #2a2a2a;
+      padding: 8px 24px;
+      border-radius: 32px;
+      font-size: 1.8rem;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+
+    .bg-gray {
+      background-color: #2a2a2a;
+      color: #fff;
+    }
+  }
+
+  .container-cases-cards {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 64px 32px;
+    flex-wrap: wrap;
+
+    > div {
+      width: 45%;
+      flex-grow: 1;
+      height: auto;
+
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      > div {
+        width: 80%;
+        position: relative;
+        z-index: 99;
+        margin: -50px auto 0 auto;
+        padding: 32px;
+        background-color: #fff;
+        border: 1px solid #e1e4ed;
+        border-radius: 8px;
+        box-shadow: 10px 10px 10px -6px rgba(0, 0, 0, 0.1);
+
+        @media (max-width: 992px) {
+          width: 90%;
+        }
+
+        h4 {
+          color: #020013;
+          font-size: 2.4rem;
+          font-weight: 500;
+        }
+
+        p {
+          margin-top: 24px;
+          color: #020013;
+          font-size: 1.8rem;
+          line-height: 150%;
         }
       }
     }

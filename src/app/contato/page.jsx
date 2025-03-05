@@ -43,12 +43,8 @@ export default function Contato() {
                   <li>Serviços</li>
                 </a>
 
-                <a href="#">
+                <a href="/projetos">
                   <li>Projetos</li>
-                </a>
-
-                <a href="#">
-                  <li>InnovaStudio</li>
                 </a>
               </nav>
 

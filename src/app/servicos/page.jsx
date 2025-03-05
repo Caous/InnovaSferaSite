@@ -1,5 +1,7 @@
 "use client";
 
+import { useState } from "react";
+
 import Link from "next/link";
 import Image from "next/image";
 
@@ -10,12 +12,55 @@ import {
   ServicosContainer,
   ServicesExplore,
   ServicesTwo,
+  ServicesFour,
 } from "../../styles/servicos.styles";
 
 import { GlobalStyles } from "@/lib";
 import Footer from "@/components/footer";
 
+const projects = [
+  {
+    id: 1,
+    title: "Frontend",
+    description:
+      "Ornare arcu dui vivamus arcu felis bibendum ut tristique et tortor condimentum lacinia quis vel eros laoreet id donec ultrices tincidunt.",
+    category: "Frontend",
+    image: "case-image.svg",
+  },
+  {
+    id: 2,
+    title: "Backend",
+    description:
+      "Ornare arcu dui vivamus arcu felis bibendum ut tristique et tortor condimentum lacinia quis vel eros laoreet id donec ultrices tincidunt.",
+    category: "Backend",
+    image: "case-image.svg",
+  },
+  {
+    id: 3,
+    title: "Mobile",
+    description:
+      "Ornare arcu dui vivamus arcu felis bibendum ut tristique et tortor condimentum lacinia quis vel eros laoreet id donec ultrices tincidunt.",
+    category: "Mobile",
+    image: "case-image.svg",
+  },
+  {
+    id: 4,
+    title: "Frontend",
+    description:
+      "Ornare arcu dui vivamus arcu felis bibendum ut tristique et tortor condimentum lacinia quis vel eros laoreet id donec ultrices tincidunt.",
+    category: "Frontend",
+    image: "case-image.svg",
+  },
+];
+
 export default function Contato() {
+  const [filter, setFilter] = useState("Todos");
+
+  const filteredProjects =
+    filter === "Todos"
+      ? projects
+      : projects.filter((project) => project.category === filter);
+
   return (
     <>
       <GlobalStyles />
@@ -37,16 +82,12 @@ export default function Contato() {
                   <li>Início</li>
                 </a>
 
-                <a href="#">
+                <a href="/servicos">
                   <li className="active">Serviços</li>
                 </a>
 
-                <a href="#">
+                <a href="/projetos">
                   <li>Projetos</li>
-                </a>
-
-                <a href="#">
-                  <li>InnovaStudio</li>
                 </a>
               </nav>
 
@@ -283,6 +324,44 @@ export default function Contato() {
           </section>
         </ContainerI>
       </ServicesTwo>
+
+      <ServicesFour>
+        <ContainerI>
+          <Slide delay={0.2}>
+            <h3>Nossa inovação não tem limite</h3>
+          </Slide>
+
+          <Slide delay={0.3}>
+            <h2>
+              <b>Da ideia à revolução:</b> como inovamos com tecnologia digital.
+            </h2>
+          </Slide>
+
+          <Slide delay={0.4} className="container-cases-filter">
+            {["Todos", "Frontend", "Backend", "Mobile"].map((category) => (
+              <button
+                key={category}
+                onClick={() => setFilter(category)}
+                className={`${filter === category ? "bg-gray" : ""}`}
+              >
+                {category}
+              </button>
+            ))}
+          </Slide>
+
+          <div className="container-cases-cards">
+            {filteredProjects.map((project) => (
+              <Slide delay={0.5} key={project.id} className="card-case">
+                <img src={project.image} alt={project.title} />
+                <div>
+                  <h4>{project.title}</h4>
+                  <p>{project.description}</p>
+                </div>
+              </Slide>
+            ))}
+          </div>
+        </ContainerI>
+      </ServicesFour>
 
       <Footer />
     </>
