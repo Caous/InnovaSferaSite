@@ -1,17 +1,65 @@
 "use client";
 
+import { useState } from "react";
+
 import Link from "next/link";
 import Image from "next/image";
 
 import Slide from "../../components/slide";
 
 import ContainerI from "../../components/container";
-import { ProjetosContainer } from "../../styles/projetos.styles";
+import {
+  ProjetosContainer,
+  SectionInnova,
+  SectionProjectFilter,
+} from "../../styles/projetos.styles";
 
 import { GlobalStyles } from "@/lib";
 import Footer from "@/components/footer";
 
+const projects = [
+  {
+    id: 1,
+    title: "Landing Page",
+    description: "Uma landing page responsiva e moderna.",
+    category: "Frontend",
+    image: "case-image.svg",
+    link: "#",
+  },
+  {
+    id: 2,
+    title: "API de Usuários",
+    description: "Uma API REST para gerenciamento de usuários.",
+    category: "Backend",
+    image: "case-image.svg",
+    link: "#",
+  },
+  {
+    id: 3,
+    title: "App de Tarefas",
+    description: "Aplicativo mobile para organização de tarefas.",
+    category: "Mobile",
+    image: "case-image.svg",
+    link: "#",
+  },
+  {
+    id: 4,
+    title: "Dashboard Admin",
+    description: "Dashboard interativo para gerenciamento de dados.",
+    category: "Frontend",
+    image: "case-image.svg",
+    link: "#",
+  },
+];
+
 export default function Projetos() {
+  const [filter, setFilter] = useState("Todos");
+
+  const filteredProjects =
+    filter === "Todos"
+      ? projects
+      : projects.filter((project) => project.category === filter);
+
   return (
     <>
       <GlobalStyles />
@@ -64,10 +112,162 @@ export default function Projetos() {
                   nosso futuro e dos nossos parceiros.
                 </p>
               </Slide>
+
+              <article className="card-big">
+                <div>
+                  <img src="./1.png" alt="" />
+                </div>
+
+                <span>
+                  <h4>Nome do projeto</h4>
+
+                  <span>
+                    <h5>Categoria</h5>
+                    <strong>-</strong>
+                    <p>UX Design</p>
+                  </span>
+
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+
+                  <button>Acessar o projeto</button>
+                </span>
+              </article>
+
+              <div className="container-card-small">
+                <article className="card-small">
+                  <div>
+                    <img src="./1.png" alt="" />
+                  </div>
+
+                  <span>
+                    <h4>Nome do projeto</h4>
+
+                    <span>
+                      <h5>Categoria</h5>
+                      <strong>-</strong>
+                      <p>UX Design</p>
+                    </span>
+
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+
+                    <button>Acessar o projeto</button>
+                  </span>
+                </article>
+
+                <article className="card-small">
+                  <div>
+                    <img src="./1.png" alt="" />
+                  </div>
+
+                  <span>
+                    <h4>Nome do projeto</h4>
+
+                    <span>
+                      <h5>Categoria</h5>
+                      <strong>-</strong>
+                      <p>UX Design</p>
+                    </span>
+
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+
+                    <button>Acessar o projeto</button>
+                  </span>
+                </article>
+              </div>
             </div>
           </article>
         </ContainerI>
       </ProjetosContainer>
+
+      <SectionInnova>
+        <div className="container-services-two">
+          <Slide delay={0.2}>
+            <Image src="logo-white.svg" width={56} height={56} alt="Imagem" />
+          </Slide>
+
+          <Slide delay={0.3}>
+            <h3>Inovação Tech</h3>
+          </Slide>
+
+          <Slide delay={0.4}>
+            <h2>
+              Uma empresa focada em criar <b>soluções digitais</b> para seus
+              clientes.
+            </h2>
+          </Slide>
+        </div>
+      </SectionInnova>
+
+      <SectionProjectFilter>
+        <ContainerI>
+          <Slide delay={0.2}>
+            <h3>Cases da InnovaSfera</h3>
+          </Slide>
+
+          <Slide delay={0.4}>
+            <h2>
+              Conheça nossos projetos, tecnologias e inovações com{"  "}
+              <b>transformação digital.</b>
+            </h2>
+          </Slide>
+
+          <Slide delay={0.4} className="container-cases-filter">
+            {["Todos", "Frontend", "Backend", "Mobile"].map((category) => (
+              <button
+                key={category}
+                onClick={() => setFilter(category)}
+                className={`${filter === category ? "bg-gray" : ""}`}
+              >
+                {category}
+              </button>
+            ))}
+          </Slide>
+
+          <div className="container-cases-cards">
+            {filteredProjects.map((project) => (
+              <Slide delay={0.5} key={project.id} className="card-case">
+                <h4>{project.title}</h4>
+
+                <div>
+                  <span>
+                    <h5>Categoria</h5>
+                    <strong>-</strong>
+                    <p>{project.category}</p>
+                  </span>
+
+                  <span>
+                    <h5>Categoria</h5>
+                    <strong>-</strong>
+                    <p>{project.category}</p>
+                  </span>
+                </div>
+
+                <h6>Sobre o projeto</h6>
+                <p>{project.description}</p>
+
+                <a href={project.link} target="_blank">
+                  <button>Acessar projeto</button>
+                </a>
+              </Slide>
+            ))}
+          </div>
+        </ContainerI>
+      </SectionProjectFilter>
 
       <Footer />
     </>

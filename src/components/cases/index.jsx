@@ -77,7 +77,7 @@ export default function Cases() {
 
         <Slide delay={0.4}>
           <h2>
-            Conheça nossos projetos, tecnologias e inovações com{" "}
+            Conheça nossos projetos, tecnologias e inovações com{"  "}
             <b>transformação digital.</b>
           </h2>
         </Slide>

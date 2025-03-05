@@ -280,7 +280,7 @@ export const ServicesExplore = styled.section`
 
       img {
         border-radius: 16px;
-        width: 100%;
+        width: auto;
         object-fit: cover;
       }
     }
