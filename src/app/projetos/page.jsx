@@ -12,6 +12,8 @@ import {
   ProjetosContainer,
   SectionInnova,
   SectionProjectFilter,
+  SectionFuture,
+  SectionProjectFilterDetails,
 } from "../../styles/projetos.styles";
 
 import { GlobalStyles } from "@/lib";
@@ -268,6 +270,113 @@ export default function Projetos() {
           </div>
         </ContainerI>
       </SectionProjectFilter>
+
+      <SectionFuture>
+        <ContainerI>
+          <div className="container-future">
+            <img src="innovaimage.svg" alt="" />
+            <span>
+              <h3>Moldando o futuro</h3>
+              <h2>
+                <b>InnovaSfera:</b> Criando o amanhã com inovação e tecnologia.
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <button>Entrar em contato</button>
+            </span>
+          </div>
+        </ContainerI>
+      </SectionFuture>
+
+      <SectionProjectFilterDetails>
+        <ContainerI>
+          <Slide delay={0.2}>
+            <h3>Nossa inovação não tem limite</h3>
+          </Slide>
+
+          <Slide delay={0.4}>
+            <h2>
+              <b>Da ideia à revolução:</b> como inovamos com tecnologia digital.
+            </h2>
+          </Slide>
+
+          <Slide delay={0.4} className="container-cases-filter">
+            {["Todos", "Frontend", "Backend", "Mobile"].map((category) => (
+              <button
+                key={category}
+                onClick={() => setFilter(category)}
+                className={`${filter === category ? "bg-gray" : ""}`}
+              >
+                {category}
+              </button>
+            ))}
+          </Slide>
+
+          <div className="container-cases-cards">
+            {filteredProjects.map((project) => (
+              <Slide
+                delay={0.5}
+                key={project.id}
+                className="card-projects-details"
+              >
+                <div className="info">
+                  <h4>{project.title}</h4>
+
+                  <div>
+                    <span>
+                      <h5>Categoria</h5>
+                      <strong>-</strong>
+                      <p>{project.category}</p>
+                    </span>
+
+                    <span>
+                      <h5>Categoria</h5>
+                      <strong>-</strong>
+                      <p>{project.category}</p>
+                    </span>
+                  </div>
+
+                  <p>{project.description}</p>
+                </div>
+
+                <div>
+                  <img src={project.image} alt="" />
+                </div>
+
+                <div className="techs">
+                  <div>
+                    <h4>Tecnologias usadas</h4>
+
+                    <span>
+                      <h5>React</h5>
+                      <h5>React</h5>
+                      <h5>React</h5>
+                      <h5>React</h5>
+                    </span>
+                  </div>
+
+                  <a href={project.link} target="_blank">
+                    <button>Acessar projeto</button>
+                  </a>
+
+                  <div>
+                    <h4>Serviços</h4>
+
+                    <span>
+                      <h5>UX</h5>
+                      <h5>Frontend</h5>
+                    </span>
+                  </div>
+                </div>
+              </Slide>
+            ))}
+          </div>
+        </ContainerI>
+      </SectionProjectFilterDetails>
 
       <Footer />
     </>
