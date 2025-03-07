@@ -1,22 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import { GlobalStyles } from "@/lib";
 
-import Link from "next/link";
 import Image from "next/image";
 
-import Slide from "../../components/slide";
+import { Menu, ContainerI, Slide, Footer } from "@/components";
 
-import ContainerI from "../../components/container";
-import {
-  ServicosContainer,
-  ServicesExplore,
-  ServicesTwo,
-  ServicesFour,
-} from "../../styles/servicos.styles";
-
-import { GlobalStyles } from "@/lib";
-import Footer from "@/components/footer";
+import * as S from "@/styles/servicos.styles";
 
 const projects = [
   {
@@ -65,37 +56,9 @@ export default function Contato() {
     <>
       <GlobalStyles />
 
-      <ServicosContainer>
+      <S.ServicosContainer>
         <ContainerI>
-          <Slide delay={0.2} className="header">
-            <header>
-              <Image
-                src="/logo-large.svg"
-                width={168}
-                height={48}
-                alt="Logo da InnovaSfera"
-                priority
-              />
-
-              <nav>
-                <a href="/">
-                  <li>Início</li>
-                </a>
-
-                <a href="/servicos">
-                  <li className="active">Serviços</li>
-                </a>
-
-                <a href="/projetos">
-                  <li>Projetos</li>
-                </a>
-              </nav>
-
-              <Link href="/contato" className="contato">
-                Entrar em contato
-              </Link>
-            </header>
-          </Slide>
+          <Menu />
 
           <article>
             <div className="container-contact">
@@ -169,9 +132,9 @@ export default function Contato() {
             </div>
           </article>
         </ContainerI>
-      </ServicosContainer>
+      </S.ServicosContainer>
 
-      <ServicesExplore>
+      <S.ServicesExplore>
         <ContainerI>
           <div className="container-studio-text">
             <Slide delay={0.2}>
@@ -259,9 +222,9 @@ export default function Contato() {
             </div>
           </div>
         </ContainerI>
-      </ServicesExplore>
+      </S.ServicesExplore>
 
-      <ServicesTwo>
+      <S.ServicesTwo>
         <ContainerI>
           <section className="container-services-two">
             <Slide delay={0.2}>
@@ -275,57 +238,63 @@ export default function Contato() {
               </h2>
             </Slide>
 
-            <article className="card-big">
-              <span>
-                <h4>Web design</h4>
-                <p>
-                  Lorem ipsum dalaracc lacus vel facilisis dolor sit amet
-                  consecte tur adipiscing elit semper dalaracc lacus vel
-                  facilisis volutpat est velitolm.
-                </p>
-              </span>
+            <Slide delay={0.5}>
+              <article className="card-big">
+                <span>
+                  <h4>Web design</h4>
+                  <p>
+                    Lorem ipsum dalaracc lacus vel facilisis dolor sit amet
+                    consecte tur adipiscing elit semper dalaracc lacus vel
+                    facilisis volutpat est velitolm.
+                  </p>
+                </span>
 
-              <div>
-                <img src="./image.svg" alt="" />
-              </div>
-            </article>
+                <div>
+                  <img src="./image.svg" alt="" />
+                </div>
+              </article>
+            </Slide>
 
             <div className="card-small">
-              <article>
-                <span>
-                  <h4>Web design</h4>
-                  <p>
-                    Lorem ipsum dalaracc lacus vel facilisis dolor sit amet
-                    consecte tur adipiscing elit semper dalaracc lacus vel
-                    facilisis volutpat est velitolm.
-                  </p>
-                </span>
+              <Slide delay={0.6}>
+                <article>
+                  <span>
+                    <h4>Web design</h4>
+                    <p>
+                      Lorem ipsum dalaracc lacus vel facilisis dolor sit amet
+                      consecte tur adipiscing elit semper dalaracc lacus vel
+                      facilisis volutpat est velitolm.
+                    </p>
+                  </span>
 
-                <div>
-                  <img src="./image.svg" alt="" />
-                </div>
-              </article>
+                  <div>
+                    <img src="./image.svg" alt="" />
+                  </div>
+                </article>
+              </Slide>
 
-              <article>
-                <span>
-                  <h4>Web design</h4>
-                  <p>
-                    Lorem ipsum dalaracc lacus vel facilisis dolor sit amet
-                    consecte tur adipiscing elit semper dalaracc lacus vel
-                    facilisis volutpat est velitolm.
-                  </p>
-                </span>
+              <Slide delay={0.7}>
+                <article>
+                  <span>
+                    <h4>Web design</h4>
+                    <p>
+                      Lorem ipsum dalaracc lacus vel facilisis dolor sit amet
+                      consecte tur adipiscing elit semper dalaracc lacus vel
+                      facilisis volutpat est velitolm.
+                    </p>
+                  </span>
 
-                <div>
-                  <img src="./image.svg" alt="" />
-                </div>
-              </article>
+                  <div>
+                    <img src="./image.svg" alt="" />
+                  </div>
+                </article>
+              </Slide>
             </div>
           </section>
         </ContainerI>
-      </ServicesTwo>
+      </S.ServicesTwo>
 
-      <ServicesFour>
+      <S.ServicesFour>
         <ContainerI>
           <Slide delay={0.2}>
             <h3>Nossa inovação não tem limite</h3>
@@ -361,7 +330,7 @@ export default function Contato() {
             ))}
           </div>
         </ContainerI>
-      </ServicesFour>
+      </S.ServicesFour>
 
       <Footer />
     </>

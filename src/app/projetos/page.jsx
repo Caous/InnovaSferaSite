@@ -1,13 +1,15 @@
 "use client";
 
 import { useState } from "react";
+import { GlobalStyles } from "@/lib";
 
-import Link from "next/link";
 import Image from "next/image";
 
-import Slide from "../../components/slide";
-
+import Menu from "../../components/menu";
 import ContainerI from "../../components/container";
+import Slide from "../../components/slide";
+import Footer from "@/components/footer";
+
 import {
   ProjetosContainer,
   SectionInnova,
@@ -15,9 +17,6 @@ import {
   SectionFuture,
   SectionProjectFilterDetails,
 } from "../../styles/projetos.styles";
-
-import { GlobalStyles } from "@/lib";
-import Footer from "@/components/footer";
 
 const projects = [
   {
@@ -68,35 +67,7 @@ export default function Projetos() {
 
       <ProjetosContainer>
         <ContainerI>
-          <Slide delay={0.2} className="header">
-            <header>
-              <Image
-                src="/logo-large.svg"
-                width={168}
-                height={48}
-                alt="Logo da InnovaSfera"
-                priority
-              />
-
-              <nav>
-                <a href="/">
-                  <li>Início</li>
-                </a>
-
-                <a href="/servicos">
-                  <li>Serviços</li>
-                </a>
-
-                <a href="/projetos">
-                  <li className="active">Projetos</li>
-                </a>
-              </nav>
-
-              <Link href="/contato" className="contato">
-                Entrar em contato
-              </Link>
-            </header>
-          </Slide>
+          <Menu />
 
           <article>
             <div className="container-contact">

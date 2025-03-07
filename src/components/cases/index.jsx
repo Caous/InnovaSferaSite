@@ -4,8 +4,6 @@ import { useState } from "react";
 
 import Slide from "../slide";
 
-import Image from "next/image";
-
 import ContainerI from "../container";
 import { CasesContainer } from "./styles";
 

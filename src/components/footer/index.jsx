@@ -22,8 +22,7 @@ export default function Footer() {
               <h3>Empresa</h3>
 
               <a href="#">Serviços</a>
-              <a href="#">Projetos</a>
-              <a href="#">InnovaStudio</a>
+              <a href="#">Projetos</a>       
               <a href="#">Contato</a>
             </span>
 

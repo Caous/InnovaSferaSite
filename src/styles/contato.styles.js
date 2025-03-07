@@ -10,58 +10,6 @@ export const HeroContato = styled.section`
   position: relative;
   padding-bottom: 200px;
 
-  .header {
-    width: 100%;
-  }
-
-  header {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 32px;
-    margin-bottom: 8%;
-
-    @media (max-width: 992px) {
-      justify-content: center;
-    }
-
-    nav {
-      display: flex;
-      align-items: center;
-      gap: 24px;
-      background-color: #00020f;
-      border: 1px solid #242d6b;
-      border-radius: 100px;
-      padding: 8px 24px;
-
-      @media (max-width: 992px) {
-        display: none;
-      }
-
-      a {
-        color: #a7adbe;
-        font-weight: 500;
-
-        &:hover {
-          color: #fff;
-        }
-
-        .active {
-          background-color: #00020f;
-          border: 1px solid #00020f;
-          padding: 12px 0;
-          border-radius: 24px;
-          color: #a7adbe;
-
-          &:hover {
-            color: #fff;
-          }
-        }
-      }
-    }
-  }
-
   .container-icon-mouse {
     display: flex;
     align-items: center;

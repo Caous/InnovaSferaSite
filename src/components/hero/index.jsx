@@ -1,46 +1,18 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
 
 import Slide from "@/components/slide";
 
 import ContainerI from "../container";
 import { HeroImage } from "./styles";
+import Menu from "../menu";
 
 export default function Hero() {
   return (
     <HeroImage>
       <ContainerI>
-        <Slide delay={0.2} className="header">
-          <header>
-            <Image
-              src="/logo-large.svg"
-              width={168}
-              height={48}
-              alt="Logo da InnovaSfera"
-              priority
-            />
-
-            <nav>
-              <a href="/">
-                <li className="active">Início</li>
-              </a>
-
-              <a href="/servicos">
-                <li>Serviços</li>
-              </a>
-
-              <a href="/projetos">
-                <li>Projetos</li>
-              </a>
-            </nav>
-
-            <Link href="/contato" className="contato">
-              Entrar em contato
-            </Link>
-          </header>
-        </Slide>
+        <Menu />
 
         <Slide delay={0.5}>
           <div className="icon-hello">

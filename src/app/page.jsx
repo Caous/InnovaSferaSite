@@ -1,21 +1,21 @@
 "use client";
 
+import { useState, useEffect } from "react";
+import { GlobalStyles } from "@/lib";
+
+import { motion } from "framer-motion";
+
+// Fix: Muitas importações
+import { About, Cases } from "../components";
 import Hero from "../components/hero";
-import About from "../components/about";
 import Loading from "../components/loading";
 import AboutInnova from "../components/innova";
 import Values from "../components/values";
 import InnovaStudio from "../components/innovastudio";
 import Tech from "../components/tech";
 import Footer from "../components/footer";
-import Cases from "../components/cases";
 import Jobs from "../components/jobs";
 import ServicesTwo from "../components/servicestwo";
-
-import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-
-import { GlobalStyles } from "@/lib";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);

@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Slide from "../slide";
 
 import ContainerI from "../container";

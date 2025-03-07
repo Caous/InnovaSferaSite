@@ -1,21 +1,21 @@
 "use client";
 
-import Link from "next/link";
+import { GlobalStyles } from "@/lib";
+
 import Image from "next/image";
 
+import Menu from "../../components/menu";
+import ContainerI from "../../components/container";
 import Slide from "../../components/slide";
+import Footer from "@/components/footer";
 
 import { Accordion, AccordionItem } from "@szhsin/react-accordion";
 
-import ContainerI from "../../components/container";
 import {
   HeroContato,
   AboutContato,
   ValuesContainer,
 } from "../../styles/contato.styles";
-
-import { GlobalStyles } from "@/lib";
-import Footer from "@/components/footer";
 
 export default function Contato() {
   return (
@@ -24,35 +24,7 @@ export default function Contato() {
 
       <HeroContato>
         <ContainerI>
-          <Slide delay={0.2} className="header">
-            <header>
-              <Image
-                src="/logo-large.svg"
-                width={168}
-                height={48}
-                alt="Logo da InnovaSfera"
-                priority
-              />
-
-              <nav>
-                <a href="/">
-                  <li className="active">Início</li>
-                </a>
-
-                <a href="/servicos">
-                  <li>Serviços</li>
-                </a>
-
-                <a href="/projetos">
-                  <li>Projetos</li>
-                </a>
-              </nav>
-
-              <Link href="/contato" className="contato">
-                Entrar em contato
-              </Link>
-            </header>
-          </Slide>
+          <Menu />
 
           <article>
             <div className="container-contact">

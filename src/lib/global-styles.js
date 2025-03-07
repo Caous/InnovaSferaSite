@@ -2,6 +2,7 @@
 
 import { createGlobalStyle } from "styled-components";
 
+// Fix: Criar theme
 export const theme = {
   main: "#BF4F74",
   secondary: "#00ff00",
@@ -81,5 +82,21 @@ export const GlobalStyles = createGlobalStyle`
   html {
     scroll-behavior: smooth;
     font-size: 62.5%;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .active {
+    background-color: #131839;
+    border: 1px solid #202860;
+    padding: 12px 16px;
+    border-radius: 24px;
+    color: #fff;
+
+    &:hover {
+      background-color: #242d6b;
+    }
   }
 `;
