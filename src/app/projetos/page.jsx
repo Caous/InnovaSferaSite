@@ -151,9 +151,8 @@ export default function Projetos() {
 
                     <p>
                       O Training Now é um aplicativo da InnovaSfera voltado para academias e personal trainers. Ele foi desenvolvido para otimizar a gestão dos treinos,
-                      agendamentos e acompanhamento do desempenho dos clientes. Com uma interface intuitiva e funcionalidades integradas, o Training Now facilita a criação 
-                      e gerenciamento de planos de treino, permitindo que os profissionais do fitness mantenham seus clientes motivados e acompanhem sua evolução de forma 
-                      prática e eficiente.
+                      agendamentos e acompanhamento do desempenho dos clientes. Com uma interface intuitiva e funcionalidades integradas, o Training Now facilita sua vida 
+                      para você poder focar no que importa.
                     </p>
 
                     <button>Acessar o projeto</button>
