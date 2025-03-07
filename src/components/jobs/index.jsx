@@ -64,12 +64,12 @@ const services = [
     cards: [
       {
         title: "Negócios & Comercial",
-        description: "Conte com nosso time comercial e de tecnologia que unem forças para oferecer suporte completo à sua empresa, desde a análise estratégica de dados até o suporte técnico especializado.",
+        description: "Conte com nosso time comercial e de tecnologia que unem forças para oferecer suporte completo à sua empresa.",
         icon: "logo-white.svg",
       },
       {
         title: "Sistemas",
-        description: "Nosso foco é ajudar sua empresa a crescer, verificamos sistemas e procedimentos que precisam ser criados ou adaptados para ajudar a resolver qualquer problema ou melhorar performance.",
+        description: "Nosso foco é ajudar sua empresa a crescer, verificamos sistemas e procedimentos que precisam ser criados ou adaptados para sua empresa.",
         icon: "logo-white.svg",
       },
       {
@@ -79,7 +79,7 @@ const services = [
       },
       {
         title: "Análise de Dados",
-        description: "Oferecemos soluções personalizadas de análise de dados, que transformam informações em insights valiosos para reduzir custos, melhorar a lucratividade e otimizar operações",
+        description: "Análise de dados, que transformam informações em insights valiosos para reduzir custos, melhorar a lucratividade e otimizar operações",
         icon: "logo-white.svg",
       },
     ],
