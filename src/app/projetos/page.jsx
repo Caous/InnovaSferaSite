@@ -22,15 +22,15 @@ const projects = [
   {
     id: 1,
     title: "Landing Page",
-    description: "Uma landing page responsiva e moderna.",
+    description: "Uma landing page responsiva e moderna para diversos clientes.",
     category: "Frontend",
     image: "case-image.svg",
     link: "#",
   },
   {
     id: 2,
-    title: "API de Usuários",
-    description: "Uma API REST para gerenciamento de usuários.",
+    title: "Integração de clientes",
+    description: "Uma API REST para gerenciamento de clientes.",
     category: "Backend",
     image: "case-image.svg",
     link: "#",
@@ -46,7 +46,7 @@ const projects = [
   {
     id: 4,
     title: "Dashboard Admin",
-    description: "Dashboard interativo para gerenciamento de dados.",
+    description: "Dashboard interativo para gerenciamento vendas e processos de ordem de serviço.",
     category: "Frontend",
     image: "case-image.svg",
     link: "#",

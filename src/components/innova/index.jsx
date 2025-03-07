@@ -52,7 +52,7 @@ export default function Innova() {
                 </p>
 
                 <span>
-                  <h4>+10.000</h4>
+                  <h4>+30.000</h4>
                   <p>Linhas de códigos</p>
                 </span>
               </article>

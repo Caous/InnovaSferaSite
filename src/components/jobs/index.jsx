@@ -25,6 +25,11 @@ const services = [
         description: "Prototipagem e testes de usabilidade.",
         icon: "logo-white.svg",
       },
+      {
+        title: "Design Dedicado",
+        description: "Criação de interfaces para sites, blog, sistemas & aplicativos.",
+        icon: "logo-white.svg",
+      },
     ],
   },
   {
@@ -46,25 +51,35 @@ const services = [
         description: "Otimização de performance e SEO.",
         icon: "logo-white.svg",
       },
+      {
+        title: "Sistemas Sob-Medida",
+        description: "Criação de sistema dedicado para nossos parceiros, ERP, CRM, Automação, Ecommerce, Emissão de notas",
+        icon: "logo-white.svg",
+      },
     ],
   },
   {
-    id: "infraestrutura",
-    title: "Infraestrutura",
+    id: "consultoria",
+    title: "Consultoria",
     cards: [
       {
-        title: "Cloud",
-        description: "Gerenciamento de servidores e deploys.",
+        title: "Negócios & Comercial",
+        description: "Conte com nosso time comercial e de tecnologia que unem forças para oferecer suporte completo à sua empresa, desde a análise estratégica de dados até o suporte técnico especializado.",
         icon: "logo-white.svg",
       },
       {
-        title: "Segurança",
-        description: "Monitoramento e segurança de sistemas.",
+        title: "Sistemas",
+        description: "Nosso foco é ajudar sua empresa a crescer, verificamos sistemas e procedimentos que precisam ser criados ou adaptados para ajudar a resolver qualquer problema ou melhorar performance.",
         icon: "logo-white.svg",
       },
       {
-        title: "Redes",
-        description: "Configuração e manutenção de redes.",
+        title: "Procedimentos de TI",
+        description: "Consultoria em sistemas de TI para verificar se os procedimentos estão alinhados com o sistema.",
+        icon: "logo-white.svg",
+      },
+      {
+        title: "Análise de Dados",
+        description: "Oferecemos soluções personalizadas de análise de dados, que transformam informações em insights valiosos para reduzir custos, melhorar a lucratividade e otimizar operações",
         icon: "logo-white.svg",
       },
     ],
