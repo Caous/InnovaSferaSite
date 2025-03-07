@@ -64,22 +64,22 @@ const services = [
     cards: [
       {
         title: "Negócios & Comercial",
-        description: "Conte com nosso time comercial e de tecnologia que unem forças para oferecer suporte completo à sua empresa.",
+        description: "Um time comercial e de tecnologia que unem forças para oferecer suporte completo à sua empresa.",
         icon: "logo-white.svg",
       },
       {
         title: "Sistemas",
-        description: "Nosso foco é ajudar sua empresa a crescer, verificamos sistemas e procedimentos que precisam ser criados ou adaptados para sua empresa.",
+        description: "Foco em ajudar sua empresa a crescer, verificamos sistemas e procedimentos que precisam ser criados ou adaptados para sua empresa.",
         icon: "logo-white.svg",
       },
       {
         title: "Procedimentos de TI",
-        description: "Consultoria em sistemas de TI para verificar se os procedimentos estão alinhados com o sistema.",
+        description: "Consultoria em procedimentos de TI para verificar se o seu sistema está de acordo.",
         icon: "logo-white.svg",
       },
       {
         title: "Análise de Dados",
-        description: "Análise de dados, que transformam informações em insights valiosos para reduzir custos, melhorar a lucratividade e otimizar operações",
+        description: "Soluções personalizadas de análise de dados para otimizar custos, lucratividade e operações da sua empresa.",
         icon: "logo-white.svg",
       },
     ],

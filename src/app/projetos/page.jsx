@@ -73,8 +73,8 @@ export default function Projetos() {
             <div className="container-contact">
               <Slide delay={0.3}>
                 <h2>
-                  Conheça nossos projetos, tecnologias e inovações com
-                  <b>transformação digital.</b>
+                  Conheça nossos projetos, tecnologias e inovações que estão
+                  <b>transformando nossos parceiros.</b>
                 </h2>
               </Slide>
 
@@ -92,19 +92,18 @@ export default function Projetos() {
                 </div>
 
                 <span>
-                  <h4>Nome do projeto</h4>
+                  <h4>Innova Bot</h4>
 
                   <span>
                     <h5>Categoria</h5>
                     <strong>-</strong>
-                    <p>UX Design</p>
+                    <p>Sistema</p>
                   </span>
 
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Nosso Bot, desenvolvido sob medida para nossos parceiros, é uma solução da InnovaSfera que automatiza o atendimento via WhatsApp.
+                      Com um painel interativo, ele agiliza o atendimento e a resposta a todos os seus clientes, além de permitir integrações diretas com
+                      o seu CRM ou ERP para uma gestão ainda mais eficiente.
                   </p>
 
                   <button>Acessar o projeto</button>
@@ -118,19 +117,18 @@ export default function Projetos() {
                   </div>
 
                   <span>
-                    <h4>Nome do projeto</h4>
+                    <h4>ERP Na Nuvem</h4>
 
                     <span>
                       <h5>Categoria</h5>
                       <strong>-</strong>
-                      <p>UX Design</p>
+                      <p>Sistema</p>
                     </span>
 
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      O ERP Na Nuvem é a solução personalizada da InnovaSfera para clientes e parceiros que desejam transformar suas ideias em sistemas de gestão
+                      integrados. Com um custo acessível, possibilitamos a criação de um sistema sob medida, que integra processos e otimiza operações, tirando 
+                      sua ideia do papel e impulsionando a eficiência do seu negócio.
                     </p>
 
                     <button>Acessar o projeto</button>
@@ -143,19 +141,19 @@ export default function Projetos() {
                   </div>
 
                   <span>
-                    <h4>Nome do projeto</h4>
+                    <h4>Training Now</h4>
 
                     <span>
                       <h5>Categoria</h5>
                       <strong>-</strong>
-                      <p>UX Design</p>
+                      <p>Sistema</p>
                     </span>
 
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      O Training Now é um aplicativo da InnovaSfera voltado para academias e personal trainers. Ele foi desenvolvido para otimizar a gestão dos treinos,
+                      agendamentos e acompanhamento do desempenho dos clientes. Com uma interface intuitiva e funcionalidades integradas, o Training Now facilita a criação 
+                      e gerenciamento de planos de treino, permitindo que os profissionais do fitness mantenham seus clientes motivados e acompanhem sua evolução de forma 
+                      prática e eficiente.
                     </p>
 
                     <button>Acessar o projeto</button>
