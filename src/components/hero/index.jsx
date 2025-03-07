@@ -17,7 +17,7 @@ export default function Hero() {
         <Slide delay={0.5}>
           <div className="icon-hello">
             <div className="icon">🚀</div>
-            <h2>Servir nossos parceiros para sermos servidor.</h2>
+            <h2>Servir nossos parceiros para sermos servidos.</h2>
           </div>
         </Slide>
 
@@ -25,8 +25,7 @@ export default function Hero() {
           <div className="container-hero-text">
             <h1>Especialistas em design, tecnologia e inovação.</h1>
             <p>
-              Somos uma empresa de design, tecnologia e inovação dedicado a
-              potencializar a presença digital das marcas dos nossos clientes.
+              Somos uma empresa de tecnologia com sistemas sob-medida com foco em ajudar nossos parceiros a chegarem no seu máximo potencial com inovação!.
             </p>
           </div>
         </Slide>
@@ -37,9 +36,9 @@ export default function Hero() {
             <h3>Aplicativo</h3>
             <h3>Frontend</h3>
             <h3>Backend</h3>
-            <h3>Infraestrutura</h3>
+            <h3>Integração</h3>
             <h3>Automação</h3>
-            <h3>Assistência ténica</h3>
+            <h3>CRM/ERP</h3>
             <h3>SaaS</h3>
           </article>
         </Slide>

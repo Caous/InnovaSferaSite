@@ -45,16 +45,15 @@ export default function Innova() {
 
             <Slide delay={0.6}>
               <article>
-                <h3>Especialistas</h3>
+                <h3>Projetos</h3>
 
                 <p>
-                  Nossa equipe é composta por especialistas qualificados com
-                  vasta experiência na área.
+                  Vários projetos entregues em diversas esferas, sempre cuidando dos nossos parceiros e entregando resultados positivos.
                 </p>
 
                 <span>
-                  <h4>+5</h4>
-                  <p>Inovadores</p>
+                  <h4>+10.000</h4>
+                  <p>Linhas de códigos</p>
                 </span>
               </article>
             </Slide>

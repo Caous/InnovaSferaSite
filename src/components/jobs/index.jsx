@@ -108,7 +108,7 @@ export default function Jobs() {
 
             <Slide delay={0.4}>
               <h2>
-                <b>Servir nossos parceiros</b> para sermos servidor.
+                <b>Servir nossos parceiros</b> para sermos servidos.
               </h2>
             </Slide>
 

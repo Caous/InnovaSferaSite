@@ -54,9 +54,7 @@ export default function Values() {
                     </div>
                   }
                 >
-                  Quisque eget luctus mi, vehicula mollis lorem. Proin fringilla
-                  vel erat quis sodales. Nam ex enim, eleifend venenatis lectus
-                  vitae, accumsan auctor mi.
+                  Com esforço certo e muita qualidade, pautamos o valor da InnovaSfera para entregarmos sempre, o melhor resultado para crescimento e inovação.
                 </AccordionItem>
               </Slide>
 
@@ -72,8 +70,7 @@ export default function Values() {
                     </div>
                   }
                 >
-                  Suspendisse massa risus, pretium id interdum in, dictum sit
-                  amet ante. Fusce vulputate purus sed tempus feugiat.
+                  Contribuir com práticas que visam o desenvolvimento humano justo e solidário sempre pensando em mudar vidas e proporcionar o crescimento.
                 </AccordionItem>
               </Slide>
             </Accordion>

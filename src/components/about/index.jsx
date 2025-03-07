@@ -28,7 +28,7 @@ export default function About() {
 
             <Slide delay={0.5}>
               <h2>
-                Ajudamos empresas a construírem <b>produtos digitais</b>{" "}
+                Ajudamos empresas a construírem <b>seus projetos</b>{" "}
                 inovadores.
               </h2>
             </Slide>

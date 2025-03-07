@@ -92,7 +92,7 @@ export default function Contato() {
 
           <Slide delay={0.3}>
             <h2>
-              Ajudamos empresas a construírem <b>produtos digitais</b>{" "}
+              Ajudamos empresas a construírem <b>seus projetos</b>{" "}
               inovadores.
             </h2>
           </Slide>
