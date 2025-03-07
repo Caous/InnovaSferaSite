@@ -21,32 +21,32 @@ import {
 const projects = [
   {
     id: 1,
-    title: "Landing Page",
-    description: "Uma landing page responsiva e moderna para diversos clientes.",
+    title: "TT Productions",
+    description: "Um site institucional responsivo e moderno para nosso cliente e parceiro.",
     category: "Frontend",
     image: "case-image.svg",
     link: "#",
   },
   {
     id: 2,
-    title: "Integração de clientes",
-    description: "Uma API REST para gerenciamento de clientes.",
+    title: "Instituto Barros",
+    description: "Nosso parceiro Raphael Barros - CEO do Instituto Barros, abriu as portas para que a InnovaSfera pudesse mostrar sua qualidade, entregando um site unico, junto com a Innova Bot",
     category: "Backend",
     image: "case-image.svg",
     link: "#",
   },
   {
     id: 3,
-    title: "App de Tarefas",
-    description: "Aplicativo mobile para organização de tarefas.",
+    title: "Riqueza Planejada",
+    description: "Nossa parceira Cibelle produtora e criadora no mercado financeiro, conta com a Innova para sempre estar a frente com ela, auxiliando a lançar seus produtos no mercado financeiro.",
     category: "Mobile",
     image: "case-image.svg",
     link: "#",
   },
   {
     id: 4,
-    title: "Dashboard Admin",
-    description: "Dashboard interativo para gerenciamento vendas e processos de ordem de serviço.",
+    title: "Training Now",
+    description: "Nosso parceiro Rafael Godoi idealizador do projeto Training Now, convidou a InnovaSfera para fazer parte deste projeto super audacioso e inovador do mercado",
     category: "Frontend",
     image: "case-image.svg",
     link: "#",
@@ -249,10 +249,7 @@ export default function Projetos() {
                 <b>InnovaSfera:</b> Criando o amanhã com inovação e tecnologia.
               </h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Na Innova todos tem o senso de dono, para entender o real problema dos nossos clientes e criar fórmulas de resolver seus problemas ou desempenhar um ótimo trabalho de qualidade!
               </p>
               <button>Entrar em contato</button>
             </span>
