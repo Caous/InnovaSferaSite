@@ -12,17 +12,17 @@ import * as S from "@/styles/servicos.styles";
 const projects = [
   {
     id: 1,
-    title: "Frontend",
+    title: "Criação de sites",
     description:
-      "Ornare arcu dui vivamus arcu felis bibendum ut tristique et tortor condimentum lacinia quis vel eros laoreet id donec ultrices tincidunt.",
+      "Seja um site institucional, e-commerce ou landing page, garantimos um design responsivo, carregamento rápido e estratégias efi cazes de SEO. Vamos transformar sua presença digital em um verdadeiro ativo para seu negócio!",
     category: "Frontend",
     image: "case-image.svg",
   },
   {
     id: 2,
-    title: "Backend",
+    title: "Desenvolvimento de sistema",
     description:
-      "Ornare arcu dui vivamus arcu felis bibendum ut tristique et tortor condimentum lacinia quis vel eros laoreet id donec ultrices tincidunt.",
+      "Se sua empresa precisa de soluções personalizadas para otimizar processos e aumentar a produtividade, a InnovaSfera é a parceira ideal. Nós desenvolvemos sistemas sob medida para atender às suas necessidades, desde um pequeno CRM até plataformas completas e integradas.",
     category: "Backend",
     image: "case-image.svg",
   },
@@ -30,15 +30,15 @@ const projects = [
     id: 3,
     title: "Mobile",
     description:
-      "Ornare arcu dui vivamus arcu felis bibendum ut tristique et tortor condimentum lacinia quis vel eros laoreet id donec ultrices tincidunt.",
+      "Já pensou no seu sistema na palma da sua mão? Construa um aplicativo conosco e tenha todo o sistema na palma da sua mão. Crie o sistema perfeito para o seu cliente com o nosso time!",
     category: "Mobile",
     image: "case-image.svg",
   },
   {
     id: 4,
-    title: "Frontend",
+    title: "CRM - ERP - Automação",
     description:
-      "Ornare arcu dui vivamus arcu felis bibendum ut tristique et tortor condimentum lacinia quis vel eros laoreet id donec ultrices tincidunt.",
+      "Nosso time é especialista em analisar processos e necessidades de cada parceiro nosso, para criar um sistema sob medida perfeito para você, seja um CRM, ERP ou Automação para ajudar no dia a dia da sua empresa e muito mais.",
     category: "Frontend",
     image: "case-image.svg",
   },
@@ -84,7 +84,7 @@ export default function Contato() {
                   <h3>+30.000</h3>
                   <h4>Linhas de código</h4>
                   <p>
-                  Vários projetos entregues em diversas esferas, sempre cuidando dos nossos parceiros e entregando resultados positivos.
+                    Vários projetos entregues em diversas esferas.
                   </p>
                 </Slide>
 
@@ -92,7 +92,7 @@ export default function Contato() {
                   <h3>+20</h3>
                   <h4>Tecnologias usadas</h4>
                   <p>
-                    Na InnovaSfera gostamos de inovar a cada projeto, diversos projetos e diversas tecnologias e linguagens utilizadas.
+                    Na InnovaSfera gostamos de inovar a cada projeto diversos projetos e diversas tecnologias.
                   </p>
                 </Slide>
 
@@ -100,7 +100,7 @@ export default function Contato() {
                   <h3>+4</h3>
                   <h4>Projetos próprios</h4>
                   <p>
-                    A InnovaSfera criou e lançou +4 projetos próprios durante um ano, além dos projetos dedicados entregues.
+                    A InnovaSfera criou e lançou +4 projetos próprios durante um ano.
                   </p>
                 </Slide>
 
@@ -108,7 +108,7 @@ export default function Contato() {
                   <h3>+5</h3>
                   <h4>Projetos encubadores</h4>
                   <p>
-                    Nossos parceiros contam como nosso time para lançar suas ideas e projetos com excelencia no mercado.
+                    Ideias que estão amadurecendo para lançamento no mercado.
                   </p>
                 </Slide>
               </div>
@@ -229,7 +229,7 @@ export default function Contato() {
 
             <Slide delay={0.3}>
               <h2>
-                <b>Explore nossas soluções</b>, tendências e avanços com
+                <b>Explore nossas consultorias</b>, acompanhamento para o seu negócio, tendências e avanços com
                 inovação digital.
               </h2>
             </Slide>
@@ -237,11 +237,13 @@ export default function Contato() {
             <Slide delay={0.5}>
               <article className="card-big">
                 <span>
-                  <h4>Web design</h4>
+                  <h4>Negócios & Comercial</h4>
                   <p>
-                    Lorem ipsum dalaracc lacus vel facilisis dolor sit amet
-                    consecte tur adipiscing elit semper dalaracc lacus vel
-                    facilisis volutpat est velitolm.
+                    Na InnovaSfera, os times comercial e de
+                    tecnologia unem forças para oferecer
+                    suporte completo à sua empresa, desde a
+                    análise estratégica de dados até o suporte
+                    técnico especializado.
                   </p>
                 </span>
 
@@ -255,11 +257,14 @@ export default function Contato() {
               <Slide delay={0.6}>
                 <article>
                   <span>
-                    <h4>Web design</h4>
+                    <h4>Sistemas</h4>
                     <p>
-                      Lorem ipsum dalaracc lacus vel facilisis dolor sit amet
-                      consecte tur adipiscing elit semper dalaracc lacus vel
-                      facilisis volutpat est velitolm.
+                      Nosso foco é criar soluções tecnológicas
+                      sob medida, desde a concepção até a
+                      implementação de sistemas completos.
+                      É por isso que você pode contar com
+                      nosso time de tecnologia, para suportar
+                      sua empresa ou ideia.
                     </p>
                   </span>
 
@@ -272,11 +277,13 @@ export default function Contato() {
               <Slide delay={0.7}>
                 <article>
                   <span>
-                    <h4>Web design</h4>
+                    <h4>Análise de dados</h4>
                     <p>
-                      Lorem ipsum dalaracc lacus vel facilisis dolor sit amet
-                      consecte tur adipiscing elit semper dalaracc lacus vel
-                      facilisis volutpat est velitolm.
+                      Oferecemos soluções personalizadas de
+                      análise de dados, que transformam
+                      informações em insights valiosos para
+                      reduzir custos, melhorar a lucratividade e
+                      otimizar operações.
                     </p>
                   </span>
 
