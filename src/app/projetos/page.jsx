@@ -22,10 +22,10 @@ const projects = [
   {
     id: 1,
     title: "TT Productions",
-    description: "Um site institucional responsivo e moderno para nosso cliente e parceiro.",
+    description: "Temos o privilégio de fazer o site institucional moderno e responsivo para nosso cliente e parceiro, juntamente com o design dedicado feito no figma, seguimos a identidade visual da empresa.",
     category: "Frontend",
     image: "case-image.svg",
-    link: "#",
+    link: "https://ttproductions.com.br/",
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ const projects = [
     description: "Nosso parceiro Raphael Barros - CEO do Instituto Barros, abriu as portas para que a InnovaSfera pudesse mostrar sua qualidade, entregando um site unico, junto com a Innova Bot",
     category: "Backend",
     image: "case-image.svg",
-    link: "#",
+    link: "https://institutobarros.com.br/",
   },
   {
     id: 3,

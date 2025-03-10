@@ -81,38 +81,34 @@ export default function Contato() {
             <div className="small-cards-services">
               <div className="cards">
                 <Slide delay={0.2}>
-                  <h3>200+</h3>
-                  <h4>Sites feitos</h4>
+                  <h3>+30.000</h3>
+                  <h4>Linhas de código</h4>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit
-                    aliquam mauris sed ma
+                  Vários projetos entregues em diversas esferas, sempre cuidando dos nossos parceiros e entregando resultados positivos.
                   </p>
                 </Slide>
 
                 <Slide delay={0.3}>
-                  <h3>200+</h3>
-                  <h4>Sites feitos</h4>
+                  <h3>+20</h3>
+                  <h4>Tecnologias usadas</h4>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit
-                    aliquam mauris sed ma
+                    Na InnovaSfera gostamos de inovar a cada projeto, diversos projetos e diversas tecnologias e linguagens utilizadas.
                   </p>
                 </Slide>
 
                 <Slide delay={0.4}>
-                  <h3>200+</h3>
-                  <h4>Sites feitos</h4>
+                  <h3>+4</h3>
+                  <h4>Projetos próprios</h4>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit
-                    aliquam mauris sed ma
+                    A InnovaSfera criou e lançou +4 projetos próprios durante um ano, além dos projetos dedicados entregues.
                   </p>
                 </Slide>
 
                 <Slide delay={0.5}>
-                  <h3>200+</h3>
-                  <h4>Sites feitos</h4>
+                  <h3>+5</h3>
+                  <h4>Projetos encubadores</h4>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit
-                    aliquam mauris sed ma
+                    Nossos parceiros contam como nosso time para lançar suas ideas e projetos com excelencia no mercado.
                   </p>
                 </Slide>
               </div>
