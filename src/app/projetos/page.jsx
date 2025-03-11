@@ -65,47 +65,47 @@ const projects = [
 const projectsTwo = [
   {
     id: 1,
-    title: "123TT Productions",
+    title: "TT Productions",
     description:
-      "Temos o privilégio de fazer o site institucional moderno e responsivo para nosso cliente e parceiro, juntamente com o design dedicado feito no figma, seguimos a identidade visual da empresa.",
+      "Temos o privilégio de fazer o site institucional moderno e responsivo para nosso cliente e parceiro, juntamente com o design dedicado feito no figma com um ótimo SEO.",
     category: "Frontend",
     image: "case-image.svg",
     link: "https://ttproductions.com.br/",
     techs: ["React", "TypeScript"],
-    services: ["Frontend", "UX Design"],
+    services: ["Frontend", "UX Design", "Html", "Css", "JavaScript"],
   },
   {
     id: 2,
-    title: "444 Instituto Barros",
+    title: "Instituto Barros",
     description:
-      "Nosso parceiro Raphael Barros - CEO do Instituto Barros, abriu as portas para que a InnovaSfera pudesse mostrar sua qualidade, entregando um site unico, junto com a Innova Bot",
+      "Entregando um site único, com um ótimo design dedicado, SEO e tecnologia de ponta, o Instituto Barros conta também com um sistema dedicado construído para sua necessidade",
     category: "Backend",
     image: "case-image.svg",
     link: "https://institutobarros.com.br/",
     techs: ["React", "TypeScript"],
-    services: ["Frontend", "UX Design"],
+    services: ["Frontend", "UX Design", "Html", "Css", "JavaScript", "C#", "Banco de Dados", "Automação"],
   },
   {
     id: 3,
     title: "Riqueza Planejada",
     description:
-      "Nossa parceira Cibelle produtora e criadora no mercado financeiro, conta com a Innova para sempre estar a frente com ela, auxiliando a lançar seus produtos no mercado financeiro.",
-    category: "Mobile",
-    image: "case-image.svg",
-    link: "#",
-    techs: ["React", "TypeScript"],
-    services: ["Frontend", "UX Design"],
-  },
-  {
-    id: 4,
-    title: "Training Now",
-    description:
-      "Nosso parceiro Rafael Godoi idealizador do projeto Training Now, convidou a InnovaSfera para fazer parte deste projeto super audacioso e inovador do mercado",
+      "Nossa parceira Cibelle produtora e criadora no mercado financeiro, conta com a Innova para construir seu site.",
     category: "Frontend",
     image: "case-image.svg",
     link: "#",
     techs: ["React", "TypeScript"],
-    services: ["Frontend", "UX Design"],
+    services: ["Frontend", "UX Design", "Html", "Css", "JavaScript"],
+  },
+  {
+    id: 4,
+    title: "Estética Automotiva Box299",
+    description:
+      "A estétitica automotiva box299 foi um trabalho impecável para transmitir a marcar com sua qualidade, desde o design dedicado no figma, com muitas pesquisas de Google SEO e pesquisa de usabilidade",
+    category: "Frontend",
+    image: "case-image.svg",
+    link: "#",
+    techs: ["React", "TypeScript"],
+    services: ["Frontend", "UX Design", "Html", "Css", "JavaScript"]
   },
 ];
 
