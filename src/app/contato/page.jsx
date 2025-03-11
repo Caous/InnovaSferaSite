@@ -42,17 +42,17 @@ export default function Contato() {
               <Slide delay={0.6}>
                 <span>
                   <img src="icon-pin.svg" alt="" />
-                  <p>São Paulo</p>
+                  <p>São Paulo, SP</p>
                 </span>
 
                 <span>
                   <img src="icon-phone.svg" alt="" />
-                  <p>14 9000-0000</p>
+                  <p>(11) 97466-7009</p>
                 </span>
 
                 <span>
                   <img src="icon-mail.svg" alt="" />
-                  <p>innovasfera@gmail.com</p>
+                  <p>suporte@innovasfera.com.br</p>
                 </span>
               </Slide>
             </div>
@@ -87,37 +87,35 @@ export default function Contato() {
       <AboutContato>
         <ContainerI>
           <Slide delay={0.2}>
-            <h3>Conheça a InnovaSfera</h3>
+            <h3>A Visão do CEO</h3>
           </Slide>
 
           <Slide delay={0.3}>
             <h2>
-              Ajudamos empresas a construírem <b>seus projetos</b>{" "}
-              inovadores.
+              <b>Conheça Gustavo Santos</b> e sua jornada na criação da
+              InnovaSfera.
             </h2>
           </Slide>
 
           <article>
             <div className="card-text">
-              <Slide delay={0.3}>
-                <h4>
-                  Animado para trabalhar junto com você em seu próximo projeto?
-                </h4>
-              </Slide>
-
               <Slide delay={0.5}>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipiscing eli mattis
-                  sit phasellus mollis sit aliquam sit nullam.
+                  Sou Gustavo Santos, criei a InnovaSfera em 2024 com o objetivo
+                  de transformar empresas por meio da tecnologia. Acreditamos
+                  que a inovação, quando aplicada de forma personalizada, pode
+                  resolver problemas reais e criar novas oportunidades. Nosso
+                  compromisso é oferecer soluções sob medida, com alta
+                  qualidade, eficiência e visão estratégica, sempre focados em
+                  impulsionar nossos clientes para o futuro. Nossa visão é
+                  construir parcerias duradouras, servindo com excelência e
+                  compromisso, inspirados pelo princípio de que quem deseja ser
+                  servido, primeiro deve ser servo.
                 </p>
-              </Slide>
-
-              <Slide delay={0.6}>
-                <button>Acessar projetos</button>
               </Slide>
             </div>
             <div className="card-image">
-              <img src="" alt="" />
+              <img src="ceo.jpg" alt="" />
             </div>
           </article>
         </ContainerI>

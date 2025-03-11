@@ -7,7 +7,7 @@ export const ProjetosContainer = styled.section`
   background-size: cover;
   width: 100%;
   height: auto;
-  
+
   padding-bottom: 200px;
 
   @media (max-width: 992px) {
@@ -531,6 +531,7 @@ export const SectionFuture = styled.section`
       }
 
       button {
+        cursor: pointer;
         background-color: #a2ef1b;
         border-radius: 12px;
         color: #0f0f0f;
@@ -614,9 +615,10 @@ export const SectionProjectFilterDetails = styled.section`
 
   .card-projects-details {
     width: 100%;
-    height: 450px;
+
+    height: auto;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
     gap: 24px;
     margin-bottom: 50px;
@@ -629,7 +631,6 @@ export const SectionProjectFilterDetails = styled.section`
     > div {
       width: 30%;
       flex-grow: 1;
-      height: 100%;
 
       @media (max-width: 992px) {
         width: 100%;
@@ -723,6 +724,7 @@ export const SectionProjectFilterDetails = styled.section`
       }
 
       button {
+        cursor: pointer;
         background-color: #a2ef1b;
         border-radius: 12px;
         color: #0f0f0f;

@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { GlobalStyles } from "@/lib";
 
+import Link from "next/link";
+
 import Image from "next/image";
 
 import { Menu, ContainerI, Slide, Footer } from "@/components";
@@ -83,16 +85,15 @@ export default function Contato() {
                 <Slide delay={0.2}>
                   <h3>+30.000</h3>
                   <h4>Linhas de código</h4>
-                  <p>
-                    Vários projetos entregues em diversas esferas.
-                  </p>
+                  <p>Vários projetos entregues em diversas esferas.</p>
                 </Slide>
 
                 <Slide delay={0.3}>
                   <h3>+20</h3>
                   <h4>Tecnologias usadas</h4>
                   <p>
-                    Na InnovaSfera gostamos de inovar a cada projeto diversos projetos e diversas tecnologias.
+                    Na InnovaSfera gostamos de inovar a cada projeto diversos
+                    projetos e diversas tecnologias.
                   </p>
                 </Slide>
 
@@ -100,7 +101,8 @@ export default function Contato() {
                   <h3>+4</h3>
                   <h4>Projetos próprios</h4>
                   <p>
-                    A InnovaSfera criou e lançou +4 projetos próprios durante um ano.
+                    A InnovaSfera criou e lançou +4 projetos próprios durante um
+                    ano.
                   </p>
                 </Slide>
 
@@ -142,7 +144,9 @@ export default function Contato() {
             </Slide>
 
             <Slide delay={0.4}>
-              <button>Entrar em contato</button>
+              <Link href="/contato">
+                <button>Entrar em contato</button>
+              </Link>
             </Slide>
           </div>
 
@@ -150,34 +154,19 @@ export default function Contato() {
             <div className="card-one">
               <Slide delay={0.4}>
                 <article>
-                  <Image
-                    src="/image.svg"
-                    width={280}
-                    height={300}
-                    alt="Imagem"
-                  />
+                  <img src="image.svg" alt="Imagem" />
                 </article>
               </Slide>
 
               <Slide delay={0.6}>
                 <article>
-                  <Image
-                    src="/image.svg"
-                    width={280}
-                    height={300}
-                    alt="Imagem"
-                  />
+                  <img src="image.svg" alt="Imagem" />
                 </article>
               </Slide>
 
               <Slide delay={0.6}>
                 <article>
-                  <Image
-                    src="/image.svg"
-                    width={280}
-                    height={300}
-                    alt="Imagem"
-                  />
+                  <img src="image.svg" alt="Imagem" />
                 </article>
               </Slide>
             </div>
@@ -185,34 +174,19 @@ export default function Contato() {
             <div className="card-two">
               <Slide delay={0.4}>
                 <article>
-                  <Image
-                    src="/image.svg"
-                    width={280}
-                    height={300}
-                    alt="Imagem"
-                  />
+                  <img src="image.svg" alt="Imagem" />
                 </article>
               </Slide>
 
               <Slide delay={0.6}>
                 <article>
-                  <Image
-                    src="/image.svg"
-                    width={280}
-                    height={300}
-                    alt="Imagem"
-                  />
+                  <img src="image.svg" alt="Imagem" />
                 </article>
               </Slide>
 
               <Slide delay={0.6}>
                 <article>
-                  <Image
-                    src="/image.svg"
-                    width={280}
-                    height={300}
-                    alt="Imagem"
-                  />
+                  <img src="image.svg" alt="Imagem" />
                 </article>
               </Slide>
             </div>
@@ -229,8 +203,8 @@ export default function Contato() {
 
             <Slide delay={0.3}>
               <h2>
-                <b>Explore nossas consultorias</b>, acompanhamento para o seu negócio, tendências e avanços com
-                inovação digital.
+                <b>Explore nossas consultorias</b>, acompanhamento para o seu
+                negócio, tendências e avanços com inovação digital.
               </h2>
             </Slide>
 
@@ -239,58 +213,49 @@ export default function Contato() {
                 <span>
                   <h4>Negócios & Comercial</h4>
                   <p>
-                    Na InnovaSfera, os times comercial e de
-                    tecnologia unem forças para oferecer
-                    suporte completo à sua empresa, desde a
-                    análise estratégica de dados até o suporte
-                    técnico especializado.
+                    Na InnovaSfera, os times comercial e de tecnologia unem
+                    forças para oferecer suporte completo à sua empresa, desde a
+                    análise estratégica de dados até o suporte técnico
+                    especializado.
                   </p>
                 </span>
 
                 <div>
-                  <img src="./image.svg" alt="" />
+                  <img src="image.svg" alt="Imagem" />
                 </div>
               </article>
             </Slide>
 
             <div className="card-small">
               <Slide delay={0.6}>
-                <article>
-                  <span>
-                    <h4>Sistemas</h4>
-                    <p>
-                      Nosso foco é criar soluções tecnológicas
-                      sob medida, desde a concepção até a
-                      implementação de sistemas completos.
-                      É por isso que você pode contar com
-                      nosso time de tecnologia, para suportar
-                      sua empresa ou ideia.
-                    </p>
-                  </span>
+                <span>
+                  <h4>Sistemas</h4>
+                  <p>
+                    Nosso foco é criar soluções tecnológicas sob medida, desde a
+                    concepção até a implementação de sistemas completos. É por
+                    isso que você pode contar com nosso time de tecnologia, para
+                    suportar sua empresa ou ideia.
+                  </p>
+                </span>
 
-                  <div>
-                    <img src="./image.svg" alt="" />
-                  </div>
-                </article>
+                <div>
+                  <img src="image.svg" alt="" />
+                </div>
               </Slide>
 
               <Slide delay={0.7}>
-                <article>
-                  <span>
-                    <h4>Análise de dados</h4>
-                    <p>
-                      Oferecemos soluções personalizadas de
-                      análise de dados, que transformam
-                      informações em insights valiosos para
-                      reduzir custos, melhorar a lucratividade e
-                      otimizar operações.
-                    </p>
-                  </span>
+                <span>
+                  <h4>Análise de dados</h4>
+                  <p>
+                    Oferecemos soluções personalizadas de análise de dados, que
+                    transformam informações em insights valiosos para reduzir
+                    custos, melhorar a lucratividade e otimizar operações.
+                  </p>
+                </span>
 
-                  <div>
-                    <img src="./image.svg" alt="" />
-                  </div>
-                </article>
+                <div>
+                  <img src="image.svg" alt="" />
+                </div>
               </Slide>
             </div>
           </section>

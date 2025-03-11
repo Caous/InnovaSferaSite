@@ -183,6 +183,7 @@ export const ServicesExplore = styled.section`
     }
 
     button {
+      cursor: pointer;
       background-color: #a2ef1b;
       border-radius: 12px;
       color: #0f0f0f;
@@ -255,7 +256,7 @@ export const ServicesTwo = styled.section`
     color: #fff;
     font-size: 4rem;
     font-weight: 600;
-    max-width: 750px;
+    max-width: 900px;
 
     b {
       font-weight: 300;
@@ -269,7 +270,7 @@ export const ServicesTwo = styled.section`
 
   .card-small {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
     gap: 32px;
 
@@ -277,7 +278,7 @@ export const ServicesTwo = styled.section`
       flex-wrap: wrap;
     }
 
-    article {
+    > div {
       width: 100%;
       height: auto;
       background-color: #fff;

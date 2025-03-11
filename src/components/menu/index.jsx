@@ -11,9 +11,9 @@ import ContainerI from "../container";
 import { MenuNav, Nav, MenuIcon } from "./styles";
 
 export default function Menu() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isopen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
+  const toggleMenu = () => setIsOpen(!isopen);
 
   return (
     <MenuNav>
@@ -28,13 +28,13 @@ export default function Menu() {
               priority
             />
 
-            <MenuIcon onClick={toggleMenu} className={isOpen ? "flex" : "none"}>
+            <MenuIcon onClick={toggleMenu} className={isopen ? "flex" : "none"}>
               <span />
               <span />
               <span />
             </MenuIcon>
 
-            <Nav isOpen={isOpen}>
+            <Nav $isopen={isopen}>
               <a href="/">
                 <li>Início</li>
               </a>

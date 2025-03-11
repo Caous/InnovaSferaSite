@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { GlobalStyles } from "@/lib";
 
+import Link from "next/link";
+
 import Image from "next/image";
 
 import Menu from "../../components/menu";
@@ -17,12 +19,14 @@ import {
   SectionFuture,
   SectionProjectFilterDetails,
 } from "../../styles/projetos.styles";
+import { h5 } from "framer-motion/client";
 
 const projects = [
   {
     id: 1,
     title: "TT Productions",
-    description: "Temos o privilégio de fazer o site institucional moderno e responsivo para nosso cliente e parceiro, juntamente com o design dedicado feito no figma, seguimos a identidade visual da empresa.",
+    description:
+      "Temos o privilégio de fazer o site institucional moderno e responsivo para nosso cliente e parceiro, juntamente com o design dedicado feito no figma, seguimos a identidade visual da empresa.",
     category: "Frontend",
     image: "case-image.svg",
     link: "https://ttproductions.com.br/",
@@ -30,7 +34,8 @@ const projects = [
   {
     id: 2,
     title: "Instituto Barros",
-    description: "Nosso parceiro Raphael Barros - CEO do Instituto Barros, abriu as portas para que a InnovaSfera pudesse mostrar sua qualidade, entregando um site unico, junto com a Innova Bot",
+    description:
+      "Nosso parceiro Raphael Barros - CEO do Instituto Barros, abriu as portas para que a InnovaSfera pudesse mostrar sua qualidade, entregando um site unico, junto com a Innova Bot",
     category: "Backend",
     image: "case-image.svg",
     link: "https://institutobarros.com.br/",
@@ -38,7 +43,8 @@ const projects = [
   {
     id: 3,
     title: "Riqueza Planejada",
-    description: "Nossa parceira Cibelle produtora e criadora no mercado financeiro, conta com a Innova para sempre estar a frente com ela, auxiliando a lançar seus produtos no mercado financeiro.",
+    description:
+      "Nossa parceira Cibelle produtora e criadora no mercado financeiro, conta com a Innova para sempre estar a frente com ela, auxiliando a lançar seus produtos no mercado financeiro.",
     category: "Mobile",
     image: "case-image.svg",
     link: "#",
@@ -46,10 +52,60 @@ const projects = [
   {
     id: 4,
     title: "Training Now",
-    description: "Nosso parceiro Rafael Godoi idealizador do projeto Training Now, convidou a InnovaSfera para fazer parte deste projeto super audacioso e inovador do mercado",
+    description:
+      "Nosso parceiro Rafael Godoi idealizador do projeto Training Now, convidou a InnovaSfera para fazer parte deste projeto super audacioso e inovador do mercado",
     category: "Frontend",
     image: "case-image.svg",
     link: "#",
+  },
+];
+
+// Mudar aqui Gus 👇
+
+const projectsTwo = [
+  {
+    id: 1,
+    title: "123TT Productions",
+    description:
+      "Temos o privilégio de fazer o site institucional moderno e responsivo para nosso cliente e parceiro, juntamente com o design dedicado feito no figma, seguimos a identidade visual da empresa.",
+    category: "Frontend",
+    image: "case-image.svg",
+    link: "https://ttproductions.com.br/",
+    techs: ["React", "TypeScript"],
+    services: ["Frontend", "UX Design"],
+  },
+  {
+    id: 2,
+    title: "444 Instituto Barros",
+    description:
+      "Nosso parceiro Raphael Barros - CEO do Instituto Barros, abriu as portas para que a InnovaSfera pudesse mostrar sua qualidade, entregando um site unico, junto com a Innova Bot",
+    category: "Backend",
+    image: "case-image.svg",
+    link: "https://institutobarros.com.br/",
+    techs: ["React", "TypeScript"],
+    services: ["Frontend", "UX Design"],
+  },
+  {
+    id: 3,
+    title: "Riqueza Planejada",
+    description:
+      "Nossa parceira Cibelle produtora e criadora no mercado financeiro, conta com a Innova para sempre estar a frente com ela, auxiliando a lançar seus produtos no mercado financeiro.",
+    category: "Mobile",
+    image: "case-image.svg",
+    link: "#",
+    techs: ["React", "TypeScript"],
+    services: ["Frontend", "UX Design"],
+  },
+  {
+    id: 4,
+    title: "Training Now",
+    description:
+      "Nosso parceiro Rafael Godoi idealizador do projeto Training Now, convidou a InnovaSfera para fazer parte deste projeto super audacioso e inovador do mercado",
+    category: "Frontend",
+    image: "case-image.svg",
+    link: "#",
+    techs: ["React", "TypeScript"],
+    services: ["Frontend", "UX Design"],
   },
 ];
 
@@ -61,6 +117,11 @@ export default function Projetos() {
       ? projects
       : projects.filter((project) => project.category === filter);
 
+  const filteredProjectsTwo =
+    filter === "Todos"
+      ? projectsTwo
+      : projectsTwo.filter((project) => project.category === filter);
+
   return (
     <>
       <GlobalStyles />
@@ -71,14 +132,14 @@ export default function Projetos() {
 
           <article>
             <div className="container-contact">
-              <Slide delay={0.3}>
+              <Slide delay={0.2}>
                 <h2>
                   Conheça nossos projetos, tecnologias e inovações que estão
                   <b>transformando nossos parceiros.</b>
                 </h2>
               </Slide>
 
-              <Slide delay={0.5}>
+              <Slide delay={0.3}>
                 <p className="description">
                   Ser referência em inovação e qualidade, desenvolvendo sistemas
                   e soluções tecnológicas para impulsionar o crescimento do
@@ -86,79 +147,94 @@ export default function Projetos() {
                 </p>
               </Slide>
 
-              <article className="card-big">
-                <div>
-                  <img src="./1.png" alt="" />
+              <Slide delay={0.4}>
+                <article className="card-big">
+                  <div>
+                    <img src="./1.png" alt="" />
+                  </div>
+
+                  <span>
+                    <h4>Innova Bot</h4>
+
+                    <span>
+                      <h5>Categoria</h5>
+                      <strong>-</strong>
+                      <p>Sistema</p>
+                    </span>
+
+                    <p>
+                      Nosso Bot, desenvolvido sob medida para nossos parceiros,
+                      é uma solução da InnovaSfera que automatiza o atendimento
+                      via WhatsApp. Com um painel interativo, ele agiliza o
+                      atendimento e a resposta a todos os seus clientes, além de
+                      permitir integrações diretas com o seu CRM ou ERP para uma
+                      gestão ainda mais eficiente.
+                    </p>
+
+                    <button>Acessar o projeto</button>
+                  </span>
+                </article>
+              </Slide>
+
+              <Slide delay={0.6}>
+                <div className="container-card-small">
+                  <article className="card-small">
+                    <div>
+                      <img src="./1.png" alt="" />
+                    </div>
+
+                    <span>
+                      <h4>ERP Na Nuvem</h4>
+
+                      <span>
+                        <h5>Categoria</h5>
+                        <strong>-</strong>
+                        <p>Sistema</p>
+                      </span>
+
+                      <p>
+                        O ERP Na Nuvem é a solução personalizada da InnovaSfera
+                        para clientes e parceiros que desejam transformar suas
+                        ideias em sistemas de gestão integrados. Com um custo
+                        acessível, possibilitamos a criação de um sistema sob
+                        medida, que integra processos e otimiza operações,
+                        tirando sua ideia do papel e impulsionando a eficiência
+                        do seu negócio.
+                      </p>
+
+                      <button>Acessar o projeto</button>
+                    </span>
+                  </article>
+
+                  <article className="card-small">
+                    <div>
+                      <img src="./1.png" alt="" />
+                    </div>
+
+                    <span>
+                      <h4>Training Now</h4>
+
+                      <span>
+                        <h5>Categoria</h5>
+                        <strong>-</strong>
+                        <p>Sistema</p>
+                      </span>
+
+                      <p>
+                        O Training Now é um aplicativo da InnovaSfera voltado
+                        para academias e personal trainers. Ele foi desenvolvido
+                        para otimizar a gestão dos treinos, agendamentos e
+                        acompanhamento do desempenho dos clientes. Com uma
+                        interface intuitiva e funcionalidades integradas, o
+                        Training Now facilita sua vida para você poder focar no
+                        que importa.
+                      </p>
+
+                      <button>Acessar o projeto</button>
+                    </span>
+                  </article>
                 </div>
-
-                <span>
-                  <h4>Innova Bot</h4>
-
-                  <span>
-                    <h5>Categoria</h5>
-                    <strong>-</strong>
-                    <p>Sistema</p>
-                  </span>
-
-                  <p>
-                      Nosso Bot, desenvolvido sob medida para nossos parceiros, é uma solução da InnovaSfera que automatiza o atendimento via WhatsApp.
-                      Com um painel interativo, ele agiliza o atendimento e a resposta a todos os seus clientes, além de permitir integrações diretas com
-                      o seu CRM ou ERP para uma gestão ainda mais eficiente.
-                  </p>
-
-                  <button>Acessar o projeto</button>
-                </span>
-              </article>
-
-              <div className="container-card-small">
-                <article className="card-small">
-                  <div>
-                    <img src="./1.png" alt="" />
-                  </div>
-
-                  <span>
-                    <h4>ERP Na Nuvem</h4>
-
-                    <span>
-                      <h5>Categoria</h5>
-                      <strong>-</strong>
-                      <p>Sistema</p>
-                    </span>
-
-                    <p>
-                      O ERP Na Nuvem é a solução personalizada da InnovaSfera para clientes e parceiros que desejam transformar suas ideias em sistemas de gestão
-                      integrados. Com um custo acessível, possibilitamos a criação de um sistema sob medida, que integra processos e otimiza operações, tirando 
-                      sua ideia do papel e impulsionando a eficiência do seu negócio.
-                    </p>
-
-                    <button>Acessar o projeto</button>
-                  </span>
-                </article>
-
-                <article className="card-small">
-                  <div>
-                    <img src="./1.png" alt="" />
-                  </div>
-
-                  <span>
-                    <h4>Training Now</h4>
-
-                    <span>
-                      <h5>Categoria</h5>
-                      <strong>-</strong>
-                      <p>Sistema</p>
-                    </span>
-
-                    <p>
-                      O Training Now é um aplicativo da InnovaSfera voltado para academias e personal trainers. Ele foi desenvolvido para otimizar a gestão dos treinos,
-                      agendamentos e acompanhamento do desempenho dos clientes. Com uma interface intuitiva e funcionalidades integradas, o Training Now facilita sua vida 
-                      para você poder focar no que importa.
-                    </p>
-
-                    <button>Acessar o projeto</button>
-                  </span>
-                </article>
-              </div>
+              </Slide>
             </div>
           </article>
         </ContainerI>
@@ -219,12 +295,6 @@ export default function Projetos() {
                     <strong>-</strong>
                     <p>{project.category}</p>
                   </span>
-
-                  <span>
-                    <h5>Categoria</h5>
-                    <strong>-</strong>
-                    <p>{project.category}</p>
-                  </span>
                 </div>
 
                 <h6>Sobre o projeto</h6>
@@ -242,16 +312,32 @@ export default function Projetos() {
       <SectionFuture>
         <ContainerI>
           <div className="container-future">
-            <img src="innovaimage.svg" alt="" />
+            <img src="innovaimage.svg" alt="Logo InnovaSfera" />
             <span>
-              <h3>Moldando o futuro</h3>
-              <h2>
-                <b>InnovaSfera:</b> Criando o amanhã com inovação e tecnologia.
-              </h2>
-              <p>
-                Na Innova todos tem o senso de dono, para entender o real problema dos nossos clientes e criar fórmulas de resolver seus problemas ou desempenhar um ótimo trabalho de qualidade!
-              </p>
-              <button>Entrar em contato</button>
+              <Slide delay={0.2}>
+                <h3>Moldando o futuro</h3>
+              </Slide>
+
+              <Slide delay={0.4}>
+                <h2>
+                  <b>InnovaSfera:</b> Criando o amanhã com inovação e
+                  tecnologia.
+                </h2>
+              </Slide>
+
+              <Slide delay={0.5}>
+                <p>
+                  Na Innova todos tem o senso de dono, para entender o real
+                  problema dos nossos clientes e criar fórmulas de resolver seus
+                  problemas ou desempenhar um ótimo trabalho de qualidade!
+                </p>
+              </Slide>
+
+              <Slide delay={0.6}>
+                <Link href="/contato">
+                  <button>Entrar em contato</button>
+                </Link>
+              </Slide>
             </span>
           </div>
         </ContainerI>
@@ -282,7 +368,7 @@ export default function Projetos() {
           </Slide>
 
           <div className="container-cases-cards">
-            {filteredProjects.map((project) => (
+            {filteredProjectsTwo.map((project) => (
               <Slide
                 delay={0.5}
                 key={project.id}
@@ -292,12 +378,6 @@ export default function Projetos() {
                   <h4>{project.title}</h4>
 
                   <div>
-                    <span>
-                      <h5>Categoria</h5>
-                      <strong>-</strong>
-                      <p>{project.category}</p>
-                    </span>
-
                     <span>
                       <h5>Categoria</h5>
                       <strong>-</strong>
@@ -317,10 +397,9 @@ export default function Projetos() {
                     <h4>Tecnologias usadas</h4>
 
                     <span>
-                      <h5>React</h5>
-                      <h5>React</h5>
-                      <h5>React</h5>
-                      <h5>React</h5>
+                      {project.techs.map((tech, index) => (
+                        <h5 key={index}>{tech}</h5>
+                      ))}
                     </span>
                   </div>
 
@@ -332,8 +411,9 @@ export default function Projetos() {
                     <h4>Serviços</h4>
 
                     <span>
-                      <h5>UX</h5>
-                      <h5>Frontend</h5>
+                      {project.services.map((services, index) => (
+                        <h5 key={index}>{services}</h5>
+                      ))}
                     </span>
                   </div>
                 </div>

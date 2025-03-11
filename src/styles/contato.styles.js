@@ -234,13 +234,14 @@ export const AboutContato = styled.section`
   article {
     background-color: #fff;
     border-radius: 12px;
-
-    height: 400px;
+    height: 450px;
     display: flex;
     align-items: end;
 
     @media (max-width: 1216px) {
       height: auto;
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
     }
 
     h4 {
@@ -260,21 +261,13 @@ export const AboutContato = styled.section`
 
       @media (max-width: 1216px) {
         font-size: 1.8rem;
+        margin: 0;
       }
-    }
-
-    button {
-      color: #fff;
-      background-color: #020013;
-      padding: 16px 32px;
-      border-radius: 6px;
-      font-size: 1.8rem;
-      cursor: pointer;
     }
 
     .card-text {
       width: 60%;
-      padding: 70px 80px;
+      padding: 32px 48px;
 
       @media (max-width: 1216px) {
         width: 100%;
@@ -283,13 +276,21 @@ export const AboutContato = styled.section`
     }
 
     .card-image {
-      width: 30%;
-      height: 500px;
+      width: 35%;
+      height: 600px;
       background-color: #ebebeb;
       border-radius: 8px 8px 0px 0px;
 
       @media (max-width: 1216px) {
-        display: none;
+        width: 100%;
+        height: auto;
+      }
+
+      img {
+        border-radius: 8px 8px 0px 0px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
     }
   }

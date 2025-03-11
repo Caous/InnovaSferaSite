@@ -38,8 +38,7 @@ export const Nav = styled.nav`
     gap: 40px;
     padding: 48px 0;
 
-    display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
-
+    display: ${({ $isopen }) => ($isopen ? "flex" : "none")};
     a {
       font-size: 2.4rem;
     }
@@ -94,3 +93,4 @@ export const MenuNav = styled.section`
     flex-direction: column;
   }
 `;
+
