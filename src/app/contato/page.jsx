@@ -92,7 +92,7 @@ export default function Contato() {
 
           <Slide delay={0.3}>
             <h2>
-              <b>Conheça Gustavo Santos</b> e sua jornada na criação da
+              <b>Conheça Gustavo Nascimento</b> e sua jornada na criação da
               InnovaSfera.
             </h2>
           </Slide>
@@ -101,16 +101,15 @@ export default function Contato() {
             <div className="card-text">
               <Slide delay={0.5}>
                 <p>
-                  Sou Gustavo Santos, criei a InnovaSfera em 2024 com o objetivo
-                  de transformar empresas por meio da tecnologia. Acreditamos
-                  que a inovação, quando aplicada de forma personalizada, pode
-                  resolver problemas reais e criar novas oportunidades. Nosso
-                  compromisso é oferecer soluções sob medida, com alta
-                  qualidade, eficiência e visão estratégica, sempre focados em
-                  impulsionar nossos clientes para o futuro. Nossa visão é
-                  construir parcerias duradouras, servindo com excelência e
-                  compromisso, inspirados pelo princípio de que quem deseja ser
-                  servido, primeiro deve ser servo.
+                  Gustavo Nascimento, fundador da InnovaSfera em 2024 com o objetivo
+                  de transformar empresas por meio da tecnologia. Sempre envolvido em 
+                  diversos projetos, Gustavo já revolucionou diversos lugares que passou,
+                  desde a modernização de empresas totalmente do 0 até a inovação, de sistemas
+                  que existiam em diversos lugares. Sempre trazendo o senso de responsabilidade e qualidade
+                  Gustavo nos inspira não apenas pelas palavras mas também o exemplo, desde sua jornada como programador 
+                  até o empreendedorismo, querendo resolver problemas grandes com o uso da tecnologia.
+                  Como nosso CEO nos direciona, "Quem quer ser servido, que seja servo primeiro", Gustavo trás está visão
+                  para o mundo da tecnologia, sempre dizendo, devemos resolver problemas, dores e dar solução e assim seremos recompensados.
                 </p>
               </Slide>
             </div>
@@ -140,7 +139,7 @@ export default function Contato() {
                   <AccordionItem
                     header={
                       <div className="value">
-                        <p className="title">Pergunta 1</p>
+                        <p className="title">A InnovaSfera é uma empresa de software?</p>
 
                         <div>
                           <img src="icon-add.svg" alt="image" />
@@ -149,9 +148,7 @@ export default function Contato() {
                     }
                     initialEntered
                   >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus feugiat, massa quis bibendum lobortis, elit est
-                    euismod purus, ut porta turpis velit vel est.
+                    Sim a InnovaSfera, é uma empresa de software, para construir projetos ou dar continuidade em projetos, sistemas, automações, sites, integrações e afins.
                   </AccordionItem>
                 </Slide>
 
@@ -159,7 +156,7 @@ export default function Contato() {
                   <AccordionItem
                     header={
                       <div className="value">
-                        <p className="title">Pergunta 2</p>
+                        <p className="title">Uma empresa de Software House</p>
 
                         <div>
                           <img src="icon-add.svg" alt="image" />
@@ -167,9 +164,7 @@ export default function Contato() {
                       </div>
                     }
                   >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus feugiat, massa quis bibendum lobortis, elit est
-                    euismod purus, ut porta turpis velit vel est.
+                    Na InnovaSfera, trabalhamos com a vertente de software house, não importa sua necessidade estamos prontos para servir, traga sua ideia, seu projeto, até mesmo MVP que queira executar e estamos prontos para entregar.
                   </AccordionItem>
                 </Slide>
 
@@ -177,7 +172,7 @@ export default function Contato() {
                   <AccordionItem
                     header={
                       <div className="value">
-                        <p className="title">Pergunta 3</p>
+                        <p className="title">Desenvolvem aplicativos e sistemas?</p>
 
                         <div>
                           <img src="icon-add.svg" alt="image" />
@@ -185,9 +180,7 @@ export default function Contato() {
                       </div>
                     }
                   >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus feugiat, massa quis bibendum lobortis, elit est
-                    euismod purus, ut porta turpis velit vel est.
+                    Na InnovaSfera desenvolvemos aplicativos e sistemas para qualquer necessidade, conte com um time tecnico e um time comercial para efetuar todo acompanhamento do seu projeto, desde a criação a venda da sua idea estamos aqui para apoiar.
                   </AccordionItem>
                 </Slide>
               </Accordion>
@@ -199,7 +192,7 @@ export default function Contato() {
                   <AccordionItem
                     header={
                       <div className="value">
-                        <p className="title">Pergunta 4</p>
+                        <p className="title">Fazem criação de site?</p>
 
                         <div>
                           <img src="icon-add.svg" alt="image" />
@@ -207,17 +200,14 @@ export default function Contato() {
                       </div>
                     }
                   >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus feugiat, massa quis bibendum lobortis, elit est
-                    euismod purus, ut porta turpis velit vel est.
-                  </AccordionItem>
+                    Sim, na InnovaSfera desenvolvemos sites dedicados para o nosso cliente, contando uma esteira para criação do site, desde a construção do conteúdo, ao design, seguindo totalmente a identidade visual do nosso parceiro, com uma pesquisa de mercado e SEO para o melhor posicionamento, não apenas um template de site mas sim um projeto único.                   </AccordionItem>
                 </Slide>
 
                 <Slide delay={0.6}>
                   <AccordionItem
                     header={
                       <div className="value">
-                        <p className="title">Pergunta 5</p>
+                        <p className="title">Trabalham com cloud e banco de dados?</p>
 
                         <div>
                           <img src="icon-add.svg" alt="image" />
@@ -225,9 +215,7 @@ export default function Contato() {
                       </div>
                     }
                   >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus feugiat, massa quis bibendum lobortis, elit est
-                    euismod purus, ut porta turpis velit vel est.
+                    Sim, usamos principalmente Azure da Microsoft, para hospedar as soluções do nossos parceiros, com um time tecnico especializado para ajudar você a mander uma hospedagem de qualidade e com baixo custo.
                   </AccordionItem>
                 </Slide>
 
@@ -235,7 +223,7 @@ export default function Contato() {
                   <AccordionItem
                     header={
                       <div className="value">
-                        <p className="title">Pergunta 6</p>
+                        <p className="title">Fazem automações?</p>
 
                         <div>
                           <img src="icon-add.svg" alt="image" />
@@ -243,9 +231,7 @@ export default function Contato() {
                       </div>
                     }
                   >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus feugiat, massa quis bibendum lobortis, elit est
-                    euismod purus, ut porta turpis velit vel est.
+                    Trabalhamos com diversos tipos de automações e integrações, desde balanças de super mercado até toda parte de IOT, efetuamos automações em planilhas, sistemas, sites e muito mais conte conosco sempre.
                   </AccordionItem>
                 </Slide>
               </Accordion>

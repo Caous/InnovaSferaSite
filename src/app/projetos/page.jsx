@@ -71,8 +71,8 @@ const projectsTwo = [
     category: "Frontend",
     image: "case-image.svg",
     link: "https://ttproductions.com.br/",
-    techs: ["React", "TypeScript"],
-    services: ["Frontend", "UX Design", "Html", "Css", "JavaScript"],
+    techs: ["React", "TypeScript", "Html", "Css", "JavaScript", "C#",],
+    services: ["Frontend", "UX Design", "Identidade Visual"],
   },
   {
     id: 2,
@@ -82,8 +82,8 @@ const projectsTwo = [
     category: "Backend",
     image: "case-image.svg",
     link: "https://institutobarros.com.br/",
-    techs: ["React", "TypeScript"],
-    services: ["Frontend", "UX Design", "Html", "Css", "JavaScript", "C#", "Banco de Dados", "Automação"],
+    techs: ["React", "TypeScript", "Html", "Css", "JavaScript", "C#",],
+    services: ["Frontend", "UX Design", "Banco de Dados", "Automação"],
   },
   {
     id: 3,
@@ -93,8 +93,8 @@ const projectsTwo = [
     category: "Frontend",
     image: "case-image.svg",
     link: "#",
-    techs: ["React", "TypeScript"],
-    services: ["Frontend", "UX Design", "Html", "Css", "JavaScript"],
+    techs: ["React", "TypeScript", "Html", "Css", "JavaScript"],
+    services: ["Frontend", "UX Design"],
   },
   {
     id: 4,
@@ -104,8 +104,8 @@ const projectsTwo = [
     category: "Frontend",
     image: "case-image.svg",
     link: "#",
-    techs: ["React", "TypeScript"],
-    services: ["Frontend", "UX Design", "Html", "Css", "JavaScript"]
+    techs: ["React", "TypeScript", "Html", "Css", "JavaScript"],
+    services: ["Frontend", "UX Design", "Identidade Visual"]
   },
 ];
 
