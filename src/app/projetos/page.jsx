@@ -46,12 +46,12 @@ const projects = [
 const projectsTwo = [
   {
     id: 1,
-    title: "TT Productions",
+    title: "Menina Mulher",
     description:
-      "Temos o privilégio de fazer o site institucional moderno e responsivo para nosso cliente e parceiro, juntamente com o design dedicado feito no figma com um ótimo SEO.",
+      "Produzindo um trabalho excepcional para nossa cliente Menina Mulher temos o privilégio de não apenas desenvolver o design do site mas também criar a identidade visual da Menina Mulher!",
     category: "Frontend",
     image: "ttproductions.png",
-    link: "https://ttproductions.com.br/",
+    link: "https://meninamulherbyam.com.br/",
     techs: ["React", "TypeScript", "Html", "Css", "JavaScript", "C#"],
     services: ["Frontend", "UX Design", "Identidade Visual"],
   },
