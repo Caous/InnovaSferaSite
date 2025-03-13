@@ -23,21 +23,21 @@ import {
 const projects = [
   {
     id: 1,
-    title: "TT Productions",
+    title: "Menina Mulher",
     description:
-      "Temos o privilégio de fazer o site institucional moderno e responsivo para nosso cliente e parceiro, juntamente com o design dedicado feito no figma, seguimos a identidade visual da empresa.",
+      "Produzindo um trabalho excepcional para nossa cliente Menina Mulher temos o privilégio de não apenas desenvolver o design do site mas também criar a identidade visual da Menina Mulher!",
     category: "Frontend",
-    image: "ttproductions.png",
-    link: "https://ttproductions.com.br/",
+    image: "meninamulher.png",
+    link: "https://meninamulherbyam.com.br/",
   },
   {
     id: 2,
-    title: "Instituto Barros",
+    title: "Citrosuco",
     description:
-      "Nosso parceiro Raphael Barros - CEO do Instituto Barros, abriu as portas para que a InnovaSfera pudesse mostrar sua qualidade, entregando um site unico, junto com a Innova Bot",
+      "No Cistrosuco, desenvolvemos uma interface UI/UX no Figma para um sistema internacional de precificação utilizado pelas sedes da empresa. Estruturamos e organizamos todos os dados, criando um fluxo intuitivo e eficiente para otimizar a experiência do usuário.",
     category: "UX Design",
-    image: "instituto-barros.png",
-    link: "https://institutobarros.com.br/",
+    image: "citrosuco.png",
+    link: "https://www.citrosuco.com.br/",
   },
 ];
 
@@ -46,12 +46,12 @@ const projects = [
 const projectsTwo = [
   {
     id: 1,
-    title: "Menina Mulher",
+    title: "TT Productions",
     description:
-      "Produzindo um trabalho excepcional para nossa cliente Menina Mulher temos o privilégio de não apenas desenvolver o design do site mas também criar a identidade visual da Menina Mulher!",
+      "Temos o privilégio de fazer o site institucional moderno e responsivo para nosso cliente e parceiro, juntamente com o design dedicado feito no figma, seguimos a identidade visual da empresa.",
     category: "Frontend",
     image: "ttproductions.png",
-    link: "https://meninamulherbyam.com.br/",
+    link: "https://ttproductions.com.br/",
     techs: ["React", "TypeScript", "Html", "Css", "JavaScript", "C#"],
     services: ["Frontend", "UX Design", "Identidade Visual"],
   },
@@ -87,7 +87,7 @@ const projectsTwo = [
     link: "https://esteticabox299.com.br",
     techs: ["React", "TypeScript", "Html", "Css", "JavaScript"],
     services: ["Frontend", "UX Design", "Identidade Visual"],
-  },
+  }
 ];
 
 export default function Projetos() {
