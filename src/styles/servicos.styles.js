@@ -80,6 +80,12 @@ export const ServicosContainer = styled.section`
           padding: 32px 24px;
           text-align: center;
 
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          
+
           @media (max-width: 992px) {
             width: 45%;
           }

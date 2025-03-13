@@ -16,17 +16,18 @@ const projects = [
   {
     id: 1,
     title: "Landing Page",
-    description: "Uma landing page responsiva e moderna para diversos clientes",
+    description:
+      "Uma landing page responsiva e moderna para diversos clientes.",
     category: "Frontend",
-    image: "case-image.svg",
+    image: "1.png",
     link: "#",
   },
   {
     id: 2,
-    title: "Integração de clientes",
+    title: "Integração de Clientes",
     description: "Uma API REST para gerenciamento de clientes.",
     category: "Backend",
-    image: "case-image.svg",
+    image: "2.png",
     link: "#",
   },
   {
@@ -34,7 +35,7 @@ const projects = [
     title: "App de Tarefas",
     description: "Aplicativo mobile para organização de tarefas.",
     category: "Mobile",
-    image: "case-image.svg",
+    image: "3.png",
     link: "#",
   },
   {
@@ -43,7 +44,7 @@ const projects = [
     description:
       "Dashboard interativo para gerenciamento vendas e processos de ordem de serviço.",
     category: "Frontend",
-    image: "case-image.svg",
+    image: "4.png",
     link: "#",
   },
   {
@@ -52,15 +53,16 @@ const projects = [
     description:
       "Um e-commerce completo para nosso cliente, com integração de pagamento, emissão de notas e acompanhamento de estoque.",
     category: "Backend",
-    image: "case-image.svg",
+    image: "5.png",
     link: "#",
   },
   {
     id: 6,
     title: "ERP",
-    description: "Um ERP personalizado para cada necessidade.",
+    description:
+      "Um ERP (Enterprise Resource Planning) personalizado para cada necessidade.",
     category: "Backend",
-    image: "case-image.svg",
+    image: "6.png",
     link: "#",
   },
 ];
@@ -593,10 +595,6 @@ export default function Home() {
                         <h4>{project.title}</h4>
                         <p>{project.description}</p>
                       </span>
-
-                      <a href={project.link} target="_blank">
-                        <button>Acessar projeto</button>
-                      </a>
                     </div>
                   </Slide>
                 ))}

@@ -800,7 +800,6 @@ export const CasesContainer = styled.section`
       }
 
       p {
-        margin-bottom: 24px;
         font-size: 1.8rem;
         line-height: 150%;
         color: #c4c4c4;
