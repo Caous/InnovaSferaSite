@@ -287,6 +287,7 @@ export const ServicesTwo = styled.section`
 
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
 
       @media (max-width: 992px) {
         padding: 24px;
@@ -322,7 +323,7 @@ export const ServicesTwo = styled.section`
           width: 100%;
           height: 100%;
           object-fit: cover;
-          border-radius: 0px 12px 12px 0px;
+          border-radius: 12px 12px;
         }
       }
     }

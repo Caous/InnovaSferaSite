@@ -216,9 +216,9 @@ export const AboutContato = styled.section`
 
   div > div h2 {
     color: #fff;
-    font-size: 4rem;
+    font-size: 3.2rem;
     font-weight: 600;
-    max-width: 700px;
+    max-width: 600px;
     margin-bottom: 80px;
 
     b {
@@ -234,7 +234,7 @@ export const AboutContato = styled.section`
   article {
     background-color: #fff;
     border-radius: 12px;
-    height: 450px;
+    height: 500px;
     display: flex;
     align-items: end;
 
@@ -255,7 +255,7 @@ export const AboutContato = styled.section`
 
     p {
       color: #020013;
-      font-size: 2rem;
+      font-size: 1.8rem;
       line-height: 160%;
       margin: 32px 0px;
 

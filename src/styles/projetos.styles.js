@@ -637,6 +637,11 @@ export const SectionProjectFilterDetails = styled.section`
       }
     }
 
+    .image {
+      border: 2px solid #1d1d26;
+      border-radius: 16px;
+    }
+
     .info {
       background-color: #0f0f16;
       border-radius: 14px;

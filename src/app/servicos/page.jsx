@@ -5,8 +5,6 @@ import { GlobalStyles } from "@/lib";
 
 import Link from "next/link";
 
-import Image from "next/image";
-
 import { Menu, ContainerI, Slide, Footer } from "@/components";
 
 import * as S from "@/styles/servicos.styles";
@@ -18,7 +16,7 @@ const projects = [
     description:
       "Seja um site institucional, e-commerce ou landing page, garantimos um design responsivo, carregamento rápido e estratégias efi cazes de SEO. Vamos transformar sua presença digital em um verdadeiro ativo para seu negócio!",
     category: "Frontend",
-    image: "case-image.svg",
+    image: "criacao-de-sites.png",
   },
   {
     id: 2,
@@ -26,7 +24,7 @@ const projects = [
     description:
       "Se sua empresa precisa de soluções personalizadas para otimizar processos e aumentar a produtividade, a InnovaSfera é a parceira ideal. Nós desenvolvemos sistemas sob medida para atender às suas necessidades, desde um pequeno CRM até plataformas completas e integradas.",
     category: "Backend",
-    image: "case-image.svg",
+    image: "desenvolvimento-de-sistemas.jpeg",
   },
   {
     id: 3,
@@ -34,7 +32,7 @@ const projects = [
     description:
       "Já pensou no seu sistema na palma da sua mão? Construa um aplicativo conosco e tenha todo o sistema na palma da sua mão. Crie o sistema perfeito para o seu cliente com o nosso time!",
     category: "Mobile",
-    image: "case-image.svg",
+    image: "mobile.png",
   },
   {
     id: 4,
@@ -42,7 +40,7 @@ const projects = [
     description:
       "Nosso time é especialista em analisar processos e necessidades de cada parceiro nosso, para criar um sistema sob medida perfeito para você, seja um CRM, ERP ou Automação para ajudar no dia a dia da sua empresa e muito mais.",
     category: "Frontend",
-    image: "case-image.svg",
+    image: "erp.jpg",
   },
 ];
 
@@ -154,19 +152,19 @@ export default function Contato() {
             <div className="card-one">
               <Slide delay={0.4}>
                 <article>
-                  <img src="image.svg" alt="Imagem" />
+                  <img src="integracao.png" alt="Imagem" />
                 </article>
               </Slide>
 
               <Slide delay={0.6}>
                 <article>
-                  <img src="image.svg" alt="Imagem" />
+                  <img src="saas.png" alt="Imagem" />
                 </article>
               </Slide>
 
               <Slide delay={0.6}>
                 <article>
-                  <img src="image.svg" alt="Imagem" />
+                  <img src="automacao.png" alt="Imagem" />
                 </article>
               </Slide>
             </div>
@@ -174,19 +172,19 @@ export default function Contato() {
             <div className="card-two">
               <Slide delay={0.4}>
                 <article>
-                  <img src="image.svg" alt="Imagem" />
+                  <img src="sistemas.png" alt="Imagem" />
                 </article>
               </Slide>
 
               <Slide delay={0.6}>
                 <article>
-                  <img src="image.svg" alt="Imagem" />
+                  <img src="analise.png" alt="Imagem" />
                 </article>
               </Slide>
 
               <Slide delay={0.6}>
                 <article>
-                  <img src="image.svg" alt="Imagem" />
+                  <img src="design.png" alt="Imagem" />
                 </article>
               </Slide>
             </div>
@@ -221,7 +219,7 @@ export default function Contato() {
                 </span>
 
                 <div>
-                  <img src="image.svg" alt="Imagem" />
+                  <img src="suporte-tecnico.jpg" alt="Imagem" />
                 </div>
               </article>
             </Slide>
@@ -239,7 +237,7 @@ export default function Contato() {
                 </span>
 
                 <div>
-                  <img src="image.svg" alt="" />
+                  <img src="sistemas.jpg" alt="" />
                 </div>
               </Slide>
 
@@ -254,7 +252,7 @@ export default function Contato() {
                 </span>
 
                 <div>
-                  <img src="image.svg" alt="" />
+                  <img src="analise-estrategica.png" alt="" />
                 </div>
               </Slide>
             </div>

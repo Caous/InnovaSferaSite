@@ -19,7 +19,6 @@ import {
   SectionFuture,
   SectionProjectFilterDetails,
 } from "../../styles/projetos.styles";
-import { h5 } from "framer-motion/client";
 
 const projects = [
   {
@@ -28,7 +27,7 @@ const projects = [
     description:
       "Temos o privilégio de fazer o site institucional moderno e responsivo para nosso cliente e parceiro, juntamente com o design dedicado feito no figma, seguimos a identidade visual da empresa.",
     category: "Frontend",
-    image: "case-image.svg",
+    image: "ttproductions.png",
     link: "https://ttproductions.com.br/",
   },
   {
@@ -36,27 +35,9 @@ const projects = [
     title: "Instituto Barros",
     description:
       "Nosso parceiro Raphael Barros - CEO do Instituto Barros, abriu as portas para que a InnovaSfera pudesse mostrar sua qualidade, entregando um site unico, junto com a Innova Bot",
-    category: "Backend",
-    image: "case-image.svg",
+    category: "UX Design",
+    image: "instituto-barros.png",
     link: "https://institutobarros.com.br/",
-  },
-  {
-    id: 3,
-    title: "Riqueza Planejada",
-    description:
-      "Nossa parceira Cibelle produtora e criadora no mercado financeiro, conta com a Innova para sempre estar a frente com ela, auxiliando a lançar seus produtos no mercado financeiro.",
-    category: "Mobile",
-    image: "case-image.svg",
-    link: "#",
-  },
-  {
-    id: 4,
-    title: "Training Now",
-    description:
-      "Nosso parceiro Rafael Godoi idealizador do projeto Training Now, convidou a InnovaSfera para fazer parte deste projeto super audacioso e inovador do mercado",
-    category: "Frontend",
-    image: "case-image.svg",
-    link: "#",
   },
 ];
 
@@ -69,9 +50,9 @@ const projectsTwo = [
     description:
       "Temos o privilégio de fazer o site institucional moderno e responsivo para nosso cliente e parceiro, juntamente com o design dedicado feito no figma com um ótimo SEO.",
     category: "Frontend",
-    image: "case-image.svg",
+    image: "ttproductions.png",
     link: "https://ttproductions.com.br/",
-    techs: ["React", "TypeScript", "Html", "Css", "JavaScript", "C#",],
+    techs: ["React", "TypeScript", "Html", "Css", "JavaScript", "C#"],
     services: ["Frontend", "UX Design", "Identidade Visual"],
   },
   {
@@ -80,9 +61,9 @@ const projectsTwo = [
     description:
       "Entregando um site único, com um ótimo design dedicado, SEO e tecnologia de ponta, o Instituto Barros conta também com um sistema dedicado construído para sua necessidade",
     category: "Backend",
-    image: "case-image.svg",
+    image: "instituto-barros.png",
     link: "https://institutobarros.com.br/",
-    techs: ["React", "TypeScript", "Html", "Css", "JavaScript", "C#",],
+    techs: ["React", "TypeScript", "Html", "Css", "JavaScript", "C#"],
     services: ["Frontend", "UX Design", "Banco de Dados", "Automação"],
   },
   {
@@ -91,7 +72,7 @@ const projectsTwo = [
     description:
       "Nossa parceira Cibelle produtora e criadora no mercado financeiro, conta com a Innova para construir seu site.",
     category: "Frontend",
-    image: "case-image.svg",
+    image: "riqueza-planejada.png",
     link: "#",
     techs: ["React", "TypeScript", "Html", "Css", "JavaScript"],
     services: ["Frontend", "UX Design"],
@@ -102,10 +83,10 @@ const projectsTwo = [
     description:
       "A estétitica automotiva box299 foi um trabalho impecável para transmitir a marcar com sua qualidade, desde o design dedicado no figma, com muitas pesquisas de Google SEO e pesquisa de usabilidade",
     category: "Frontend",
-    image: "case-image.svg",
-    link: "#",
+    image: "box299.png",
+    link: "https://esteticabox299.com.br",
     techs: ["React", "TypeScript", "Html", "Css", "JavaScript"],
-    services: ["Frontend", "UX Design", "Identidade Visual"]
+    services: ["Frontend", "UX Design", "Identidade Visual"],
   },
 ];
 
@@ -150,7 +131,7 @@ export default function Projetos() {
               <Slide delay={0.4}>
                 <article className="card-big">
                   <div>
-                    <img src="./1.png" alt="" />
+                    <img src="innovabot.png" alt="" />
                   </div>
 
                   <span>
@@ -170,8 +151,6 @@ export default function Projetos() {
                       permitir integrações diretas com o seu CRM ou ERP para uma
                       gestão ainda mais eficiente.
                     </p>
-
-                    <button>Acessar o projeto</button>
                   </span>
                 </article>
               </Slide>
@@ -180,7 +159,7 @@ export default function Projetos() {
                 <div className="container-card-small">
                   <article className="card-small">
                     <div>
-                      <img src="./1.png" alt="" />
+                      <img src="erp-nuvem.png" alt="" />
                     </div>
 
                     <span>
@@ -201,14 +180,12 @@ export default function Projetos() {
                         tirando sua ideia do papel e impulsionando a eficiência
                         do seu negócio.
                       </p>
-
-                      <button>Acessar o projeto</button>
                     </span>
                   </article>
 
                   <article className="card-small">
                     <div>
-                      <img src="./1.png" alt="" />
+                      <img src="training-now.png" alt="" />
                     </div>
 
                     <span>
@@ -229,8 +206,6 @@ export default function Projetos() {
                         Training Now facilita sua vida para você poder focar no
                         que importa.
                       </p>
-
-                      <button>Acessar o projeto</button>
                     </span>
                   </article>
                 </div>
@@ -273,7 +248,7 @@ export default function Projetos() {
           </Slide>
 
           <Slide delay={0.4} className="container-cases-filter">
-            {["Todos", "Frontend", "Backend", "Mobile"].map((category) => (
+            {["Todos", "Frontend", "UX Design"].map((category) => (
               <button
                 key={category}
                 onClick={() => setFilter(category)}
@@ -388,8 +363,8 @@ export default function Projetos() {
                   <p>{project.description}</p>
                 </div>
 
-                <div>
-                  <img src={project.image} alt="" />
+                <div className="image">
+                  <img src={project.image} alt="Image" />
                 </div>
 
                 <div className="techs">
